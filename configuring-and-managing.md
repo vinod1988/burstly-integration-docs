@@ -22,14 +22,13 @@ Zones are physical locations within the app where ads are trafficked and present
 
 [[res/img/zone_types.jpg|alt=Burstly Zone Types]]
 
-1. Go to an app page  
+1. Click "Apps" tab  
 
-   - Click "Apps" tab
-   - Click app name
+2. Click app name  
 
-2. Click "Create New Zone"  
+3. Click "Create New Zone"  
 
-3. Configure zone  
+4. Configure zone  
 
     - Zone Name  
        Enter a unique name for the zone which will help identify this placement when running reports and assigning ads. We suggest adding either the dimensions or placement name here as well, an example would be "Basketball App 320x50 Banner Zone"
