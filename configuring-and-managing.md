@@ -29,7 +29,6 @@ Zones are physical locations within the app where ads are trafficked and present
 3. Click "Create New Zone"  
 
 4. Configure zone  
-
     - Zone Name  
        Enter a unique name for the zone which will help identify this placement when running reports and assigning ads. We suggest adding either the dimensions or placement name here as well, an example would be "Basketball App 320x50 Banner Zone"
 
