@@ -73,6 +73,5 @@ Zones are physical locations within the app where ads are trafficked and present
         You can either search for the Feed you wish to create or scroll the drop down to view the options. You can also view all supported partners here - http://www.burstly.com/home/networksupport
         - Refresh Rate  
         Setting the refresh rate for banner ads here overrides Zone refresh rate and default callback defined in app setup
-Cache Expiration
-
-Configuring the cache timeout for interstitials here allows you to set a time limit for how long Burstly will cache an interstitial to be displayed at a later time. This os often extremely helpful when trying to create a good user experience but has it's disadvantages with time sensitive advertisements. If it doesn't make sense to display an ad after X minutes, you can set the cache to expire which will cancel delivery after that amount of time has passed. This Requires an SDK version of 1.34+ for iOS and 1.15+ for Android.
+        - Cache Expiration  
+        Configuring the cache timeout for interstitials here allows you to set a time limit for how long Burstly will cache an interstitial to be displayed at a later time. This os often extremely helpful when trying to create a good user experience but has it's disadvantages with time sensitive advertisements. If it doesn't make sense to display an ad after X minutes, you can set the cache to expire which will cancel delivery after that amount of time has passed. This Requires an SDK version of 1.34+ for iOS and 1.15+ for Android.
