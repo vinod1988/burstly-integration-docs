@@ -56,3 +56,23 @@ Zones are physical locations within the app where ads are trafficked and present
 
         - Refresh Rate  
             This refresh callback will override the refresh rate you have established at the app level. This option is more flexible as it can be changed from the server anytime.
+
+
+##Creating an Ad
+
+1. Click "Create New Ad"
+
+2. Choose ad type
+    - 3rd Party SDK  
+    3rd Party SDK providers are those partners that have been included in your Burstly SDK. These providers are unique in that their libraries are actually in your app and so all unique functionality to their SDK remains intact when running via Burstly.
+    - Feed  
+    Server side feed providers are those partners where Burstly establishes a connection between servers in order to receive ads. The advantage to server side partners is that they do not add any weight to the Burstly SDK and can be accessed without having to submit an app update. These demand providers range from performance based an networks, to regional partners, to those specializing in video/rich media.
+        - Container Size  
+        The container size should match the size of the ad but you can always choose *Any Size and rely on the Feed paramaters to limit the size of the ads coming through. However if possible, we recommend matching the size of the ad to the size of the container to create the best possible user experience.
+        - Available Feeds  
+        You can either search for the Feed you wish to create or scroll the drop down to view the options. You can also view all supported partners here - http://www.burstly.com/home/networksupport
+        - Refresh Rate  
+        Setting the refresh rate for banner ads here overrides Zone refresh rate and default callback defined in app setup
+Cache Expiration
+
+Configuring the cache timeout for interstitials here allows you to set a time limit for how long Burstly will cache an interstitial to be displayed at a later time. This os often extremely helpful when trying to create a good user experience but has it's disadvantages with time sensitive advertisements. If it doesn't make sense to display an ad after X minutes, you can set the cache to expire which will cancel delivery after that amount of time has passed. This Requires an SDK version of 1.34+ for iOS and 1.15+ for Android.
