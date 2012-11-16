@@ -14,6 +14,6 @@ Once inside you can specify the name of the application and choose the platform,
 
 4. Define App Information
 
-[[res/img/app_steup.jpg]]
+[[res/img/app_setup.jpg]]
 
 For ease of use we often recommend creating a different app for each separate SKU/Market Build.  This will allow you to traffic ads without having to device target campaigns & ads.  However, if you have a Universal app choosing either iPhone or iPad will serve the same purpose and you can device target appropriately.
