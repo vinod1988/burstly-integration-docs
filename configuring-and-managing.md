@@ -7,6 +7,7 @@ Setting up an App in Burstly allows you to identify the specific application whe
 1. Go to [[Burstly Web UI|http://burstly.com]]
 2. Click Login and enter credentials.
 3. Select the "Setup an App" button located in the middle of the page.  
+
     [[res/img/dashboard.jpg|alt=Burstly Dashboard]]
 4. Define App Information  
 
