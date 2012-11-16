@@ -44,8 +44,7 @@ Zones are physical locations within the app where ads are trafficked and present
             A full-screen Zone intended exclusively for Rewards content. Use it to display in-app Rewards to your users.
 
         - Display Wall  
-            Assign multiple display creatives to a non-incentivized wall format. This zone is intended for display advertising content only.
-
+            Assign multiple display creatives to a non-incentivized wall format. This zone is intended for display advertising content only.  
     - Zone Options  
         Options vary by zone type and are explained in the UI.  
 
