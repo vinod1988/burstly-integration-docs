@@ -5,11 +5,10 @@
 Setting up an App in Burstly allows you to identify the specific application where you wish to run ads.
 
 1. Log into [[Burstly Dashboard|https://www.burstly.com/Dashboard]]
-2. Click Login and enter credentials.
-3. Select the "Setup an App" button located in the middle of the page.  
+2. Select the "Setup an App" button located in the middle of the page.  
 
     [[res/img/dashboard.jpg|alt=Burstly Dashboard]]
-4. Define app information  
+3. Define app information  
 
     [[res/img/app_setup.jpg|alt=Burstly App Setup]]
 
