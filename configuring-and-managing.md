@@ -88,7 +88,15 @@ Zones are physical locations within the app where ads are trafficked and present
         Often these are cross promotional, sale, or messaging ads for a publisher's other titles. These can used to message the user about a new launch, an upcoming sale, or that a new feature has been added to the app.
         - Direct Direct Ads  
         These are ads that a publisher/sales team has sold directly to an advertiser, agency, or network. You can also set the pricing structure for CPI/CPA, CPM, or CPC campaigns and track installs to report revenue.
-        - Destination Types  
+            - Refresh Rate  
+            Setting the refresh rate for banner ads here overrides Zone refresh rate and default callback defined in app setup
+            - Pixel Tracking  
+            Impression tracking pixels are often used by advertiser to track impressions using a 3rd party, similar to the already described click trackers. Here you can enter the impression tracking pixel as provided by the advertiser.
+            - Cache Expiration  
+            Configuring the cache timeout for interstitials here allows you to set a time limit for how long Burstly will cache an interstitial to be displayed at a later time. This os often extremely helpful when trying to create a good user experience but has it's disadvantages with time sensitive advertisements. If it doesn't make sense to display an ad after X minutes, you can set the cache to expire which will cancel delivery after that amount of time has passed. This Requires an SDK version of 1.34+ for iOS and 1.15+ for Android.
+
+4. Configure destination type
+    - Destination Types  
             - None  
             The None option is most commonly used for informational ads that do not lead the user anywhere. A good example would be to tell users that you can now use your Facebook login to sign in or if a new type of character has been added to the game.
             - Website  
@@ -103,10 +111,3 @@ Zones are physical locations within the app where ads are trafficked and present
             The Offer page option takes the user to an offer landing page. Here the user can commit an action to gain some kind of award that the publisher is offering, whether it be to watch a video or download an app.
             - Custom  
             The custom option is the best choice when you want to open the landing page using safari, which takes the user out of the app entirely, or when using a click tracking re-direct. Often advertiser will want to track clicks independently using a 3rd party, so make sure to use custom when setting up these types of click trackers.
-        - Creative Options  
-            - Refresh Rate  
-            Setting the refresh rate for banner ads here overrides Zone refresh rate and default callback defined in app setup
-            - Pixel Tracking  
-            Impression tracking pixels are often used by advertiser to track impressions using a 3rd party, similar to the already described click trackers. Here you can enter the impression tracking pixel as provided by the advertiser.
-            - Cache Expiration  
-            Configuring the cache timeout for interstitials here allows you to set a time limit for how long Burstly will cache an interstitial to be displayed at a later time. This os often extremely helpful when trying to create a good user experience but has it's disadvantages with time sensitive advertisements. If it doesn't make sense to display an ad after X minutes, you can set the cache to expire which will cancel delivery after that amount of time has passed. This Requires an SDK version of 1.34+ for iOS and 1.15+ for Android.
