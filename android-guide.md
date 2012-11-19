@@ -1,6 +1,5 @@
 #Android Guide
 
-[[_TOC_]]
 
 ##Introduction
 
