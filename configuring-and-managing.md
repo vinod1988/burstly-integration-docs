@@ -95,19 +95,24 @@ Zones are physical locations within the app where ads are trafficked and present
             - Cache Expiration  
             Configuring the cache timeout for interstitials here allows you to set a time limit for how long Burstly will cache an interstitial to be displayed at a later time. This os often extremely helpful when trying to create a good user experience but has it's disadvantages with time sensitive advertisements. If it doesn't make sense to display an ad after X minutes, you can set the cache to expire which will cancel delivery after that amount of time has passed. This Requires an SDK version of 1.34+ for iOS and 1.15+ for Android.
 
-4. Configure destination type
-    - Destination Types  
-            - None  
-            The None option is most commonly used for informational ads that do not lead the user anywhere. A good example would be to tell users that you can now use your Facebook login to sign in or if a new type of character has been added to the game.
-            - Website  
-            The Website option opens the destination URL in a web-view, as opposed to Safari, which does not take the user out of the app. This provides the best user experience but it is important to make sure the the landing page is compatible with a web view and does not need any functionality found only in Safari.
-            - App Store  
-            The App Store choice takes the user directly in the App Store to download an app. This option is best used when advertising another iOS app.
-            - iTunes  
-            The Itunes choice takes the user directly in the iTunes Store. This option is best used when advertising an item in the iTunes store such as video or album.
-            - Video  
-            The Video option opens a video either in the iOS native player if you have a destination URL of a hosted video, or can be used to open up a youtube video. These are most often used to click to video advertisements.
-            - Offer Page  
-            The Offer page option takes the user to an offer landing page. Here the user can commit an action to gain some kind of award that the publisher is offering, whether it be to watch a video or download an app.
-            - Custom  
-            The custom option is the best choice when you want to open the landing page using safari, which takes the user out of the app entirely, or when using a click tracking re-direct. Often advertiser will want to track clicks independently using a 3rd party, so make sure to use custom when setting up these types of click trackers.
+4. Configure destination type  
+    - None  
+    The None option is most commonly used for informational ads that do not lead the user anywhere. A good example would be to tell users that you can now use your Facebook login to sign in or if a new type of character has been added to the game.
+    - Website  
+    The Website option opens the destination URL in a web-view, as opposed to Safari, which does not take the user out of the app. This provides the best user experience but it is important to make sure the the landing page is compatible with a web view and does not need any functionality found only in Safari.
+    - App Store  
+    The App Store choice takes the user directly in the App Store to download an app. This option is best used when advertising another iOS app.
+    - iTunes  
+    The Itunes choice takes the user directly in the iTunes Store. This option is best used when advertising an item in the iTunes store such as video or album.
+    - Video  
+    The Video option opens a video either in the iOS native player if you have a destination URL of a hosted video, or can be used to open up a youtube video. These are most often used to click to video advertisements.
+    - Offer Page  
+    The Offer page option takes the user to an offer landing page. Here the user can commit an action to gain some kind of award that the publisher is offering, whether it be to watch a video or download an app.
+    - Custom  
+    The custom option is the best choice when you want to open the landing page using safari, which takes the user out of the app entirely, or when using a click tracking re-direct. Often advertiser will want to track clicks independently using a 3rd party, so make sure to use custom when setting up these types of click trackers.
+
+5. Click "Continue"
+
+
+##Assigning Ads
+
