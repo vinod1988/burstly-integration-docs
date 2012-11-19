@@ -4,7 +4,7 @@
 
 Setting up an App in Burstly allows you to identify the specific application where you wish to run ads.
 
-1. Go to [[Burstly Web UI|http://burstly.com]]
+1. Log into [[Burstly Dashboard|https://www.burstly.com/Dashboard]]
 2. Click Login and enter credentials.
 3. Select the "Setup an App" button located in the middle of the page.  
 
@@ -22,13 +22,15 @@ Zones are physical locations within the app where ads are trafficked and present
 
 [[res/img/zone_types.jpg|alt=Burstly Zone Types]]
 
-1. Click "Apps" tab  
+1. Log into [[Burstly Dashboard|https://www.burstly.com/Dashboard]]
 
-2. Click app name  
+2. Click "Apps" tab  
 
-3. Click "Create New Zone"  
+3. Click app name  
 
-4. Configure zone  
+4. Click "Create New Zone"  
+
+5. Configure zone  
     - Zone Name  
        Enter a unique name for the zone which will help identify this placement when running reports and assigning ads. We suggest adding either the dimensions or placement name here as well, an example would be "Basketball App 320x50 Banner Zone"
     - Zone Type  
@@ -60,9 +62,11 @@ Zones are physical locations within the app where ads are trafficked and present
 
 ##Creating an Ad
 
-1. Click "Create New Ad"
+1. Log into [[Burstly Dashboard|https://www.burstly.com/Dashboard]]
 
-2. Choose ad type
+2. Click "Create New Ad"
+
+3. Choose ad type
     - 3rd Party SDK  
     3rd Party SDK providers are those partners that have been included in your Burstly SDK. These providers are unique in that their libraries are actually in your app and so all unique functionality to their SDK remains intact when running via Burstly.
     - Feed  
