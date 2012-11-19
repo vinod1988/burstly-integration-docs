@@ -1,7 +1,5 @@
 #Configuring and Managing
 
-[[_TOC_]]
-
 ##Creating an App
 
 Setting up an App in Burstly allows you to identify the specific application where you wish to run ads.
