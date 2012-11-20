@@ -1,23 +1,14 @@
-#wiki-wrapper {
-  margin: 0 auto;
-  overflow: visible;
-  width: 100%;
+body {
+  margin: 0px;
+  padding: 0px;
 }
 
 #wiki-body
 {
-    float: right !important;
-    margin-right: 0px !important;
-}
-
-#wiki-body .gollum-markdown-content
-{
-    margin-right: 0px !important;
+    position: absolute;
 }
 
 #wiki-rightbar
 {
-    float: left !important;
-    position: absolute !important;
-    padding: 7px 0px 7px 0px !important;
+    position: absolute;
 }
