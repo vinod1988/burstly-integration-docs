@@ -7,6 +7,8 @@ $(window).load(function () {
 
     $(window).scroll(function() {
 		var scrollNavTo = Math.max(_wikiBodyTop, $(this).scrollTop());
-		_wikiNavBar.css('top', scrollNavTo + "px");
+		var navOffset = _wikiNavBar.offset();
+		_wikiNavBar.offset({left: navOffset.left, top: scrollNavTo});
+		//_wikiNavBar.css('top', scrollNavTo + "px");
 	});
 });
