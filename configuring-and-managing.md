@@ -182,10 +182,10 @@ The string passed from the client is parsed and tested against the decision rule
 
         (age>=18)&&(gender='m')
 
-- Sample decision rule to target users that are on appversion 1.3 or 1.5+  
+- Sample decision rule to target users that are on appversion 1.3 or 1.5+:  
 
         (appversion=1.3)||(appversion>=1.5)
 
-- Sample decision rule to target users that are 21+ and female  
+- Sample decision rule to target users that are 21+ and female:  
 
         (age>=21)&&(gender=female)
