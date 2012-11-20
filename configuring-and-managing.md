@@ -173,10 +173,10 @@ The string passed from the client is parsed and tested against the decision rule
 
 - Decision rule operators:  
 
-    comparison: > >= <= < = !=
-    logical: && || !
-    arithmetic: + - * /
-    associative: ( )
+        comparison: > >= <= < = !=
+        logical: && || !
+        arithmetic: + - * /
+        associative: ( )
 
 - Sample decision rule:  
 
