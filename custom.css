@@ -7,10 +7,17 @@
 #wiki-body
 {
     float: right !important;
+    margin-right: 0px !important;
+}
+
+#wiki-body .gollum-markdown-content
+{
+    margin-right: 0px !important;
 }
 
 #wiki-rightbar
 {
     float: left !important;
     position: absolute !important;
+    padding: 7px 0px 7px 0px !important;
 }
