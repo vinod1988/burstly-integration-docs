@@ -4,11 +4,11 @@ $(window).load(function () {
     var _wikiNavBar = $('#wiki-rightbar');
     var _wikiBody = $('#wiki-body');
     var _wikiBodyTop = _wikiBody.offset().top;
+    var _navMargin = 10;
 
     $(window).scroll(function() {
-		var scrollNavTo = Math.max(_wikiBodyTop, $(this).scrollTop());
+		var scrollNavTo = Math.max(_wikiBodyTop, $(this).scrollTop() + _navMargin);
 		var navOffset = _wikiNavBar.offset();
 		_wikiNavBar.offset({left: navOffset.left, top: scrollNavTo});
-		//_wikiNavBar.css('top', scrollNavTo + "px");
 	});
 });
