@@ -1,5 +1,6 @@
 $(window).load(function () {
 
+	alert("hello");
     var _wikiBodyTop = $('#wiki-body').offset().top;
     var _wikiHeader = $('#head');
     var _wikiNavBar = $('#wiki-rightbar');
