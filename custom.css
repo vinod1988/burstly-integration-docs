@@ -1,3 +1,9 @@
+#wiki-wrapper {
+  margin: 0 auto;
+  overflow: visible;
+  width: 100%;
+}
+
 #wiki-body
 {
     float: right !important;
