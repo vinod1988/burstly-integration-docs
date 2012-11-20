@@ -6,10 +6,10 @@ body {
 #wiki-body
 {
     float: right !important;
+    clear: none !important;
 }
 
 #wiki-rightbar
 {
     float: left !important;
-    position: absolute !important;
 }
