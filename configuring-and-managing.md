@@ -118,13 +118,15 @@ Zones are physical locations within the app where ads are trafficked and present
 
 Once you have created a/an ad(s) and are ready to traffic them to predetermined location in your app, the next step is to assign them to a Burstly Zone. There are two different ways you can assign ads within the Burstly UI and below we will describe the flow for each method along with best practices for each one
 
-- Assigning one creative to multiple zones  
-    This option is best used if you are looking to assign one ad to multiple zones within your app, for example if you wanted the same ad to show up on the Menu screen, the Pause screen, and the Options screen. The first step is to navigate into a creative by clicking on the name on the ads page which will take you to manage details page.  
+###Assigning one creative to multiple zones  
+This option is best used if you are looking to assign one ad to multiple zones within your app, for example if you wanted the same ad to show up on the Menu screen, the Pause screen, and the Options screen. The first step is to navigate into a creative by clicking on the name on the ads page which will take you to manage details page.  
+
 [[res/img/edit_zone.jpg]]  
+
 Next click on the Zone Assignments tab where you can view all the zones this ad is assigned to, at first this will most likely be empty as the ad has not been assigned yet. To assign this and traffic it to zone, click on the Assign this Ad button. Once on this page you can assign the ad to any zone and also decide the weight value determining how often the ad is requested relative to other ads in that tier. Once you have chosen all the zones you want the ad assigned to, you can double check by toggling the Assigned/Not Assigned button to make sure only the desired zones are selected and no other zones have been incorrectly chosen. Once you are satisfied with you choices you can navigate to any other location in the UI as selecting a tier in the zone automatically adds it and no extra step to save is required!
 
-- Assigning multiple creates to one zone  
-    The opposite scenario for assigning ads would be if you wanted to assign multiple ads to one zone. For example if you wanted to A/B test creatives for some cross promotion in a Pause Menu banner zone, you would want to assign multiple versions of the ad to this one zone. To begin navigate into an app, then into the desired zone where you want to traffic the ads. Once on the Manage Tiers page click the +Assign More Ads button to view the ads you have created. While this page is very similar to the Assign to zones page, it's important to note that now you are choosing multiple ads to assign to one zone. For each creative you want to assign you can also choose it's tier and weight, affecting how often it will be requested relative to other ads in that tier. Again once you are satisfied with you choices you can navigate to any other location in the UI as selecting a tier in the zone automatically adds it and no extra step to save is required!
+###Assigning multiple creates to one zone  
+The opposite scenario for assigning ads would be if you wanted to assign multiple ads to one zone. For example if you wanted to A/B test creatives for some cross promotion in a Pause Menu banner zone, you would want to assign multiple versions of the ad to this one zone. To begin navigate into an app, then into the desired zone where you want to traffic the ads. Once on the Manage Tiers page click the +Assign More Ads button to view the ads you have created. While this page is very similar to the Assign to zones page, it's important to note that now you are choosing multiple ads to assign to one zone. For each creative you want to assign you can also choose it's tier and weight, affecting how often it will be requested relative to other ads in that tier. Again once you are satisfied with you choices you can navigate to any other location in the UI as selecting a tier in the zone automatically adds it and no extra step to save is required!
 
 
 ##Targeting
@@ -153,3 +155,37 @@ The Burstly platform offers users the ability to target campaigns/creatives to s
 On Android, publishers also have the choice of targeting based on screen density by choosing High, Medium, or Low density device specifically. Meaning publishers can easily and quickly target any ads away from device with low density 120dpi screens without having to list each device specifically.  
 
 [[res/img/device_targeting_android.png]]
+
+
+###Custom Targeting
+
+Custom targeting allows publishers to pass back strings comprised of key-value pairs to the Burstly ad server to enhance ad serving capabilities. For example, ads can be targeted to a specific app version, user language, or gender.
+
+####Client Configuration
+
+A string should be passed back to the ad server via either the - (NSString *)pubTargeting delegate method in iOS or the setPublisherTargetingParams(String) method in Android. This string should represent a set of comma-delimited key-value pairs that can consist of integer, float, or string (must be single-quote delimited) values.
+
+    "age=24,appversion=1.4,gender='m'"
+
+####Server Configuration
+
+The string passed from the client is parsed and tested against the decision rule set in the custom targeting section of a creative or campaign's targets & limits. If the decision rule as a whole is TRUE, the creative is eligible to serve and is sent back to the client, assuming no other target & limit rules preclude the creative serving. This decision rule is a string that consists of the same keys as sent in by the client in combination with comparison, logical, arithmetic, and associative operators.
+
+- Decision rule operators:  
+
+    comparison: > >= <= < = !=
+    logical: && || !
+    arithmetic: + - * /
+    associative: ( )
+
+- Sample decision rule:  
+
+        (age>=18)&&(gender='m')
+
+- Sample decision rule to target users that are on appversion 1.3 or 1.5+  
+
+        (appversion=1.3)||(appversion>=1.5)
+
+- Sample decision rule to target users that are 21+ and female  
+
+        (age>=21)&&(gender=female)
