@@ -42,7 +42,7 @@ body {
 
 #wiki-rightbar li
 {
-	font-size: 14px;
+	font-size: 14px !important;
     margin: 2px 0px 2px 0px;
     list-style-type: none;
 }
