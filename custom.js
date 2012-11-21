@@ -16,7 +16,11 @@ $(window).load(function () {
 	// Get page name
 
 	// Create nav content.
+	var _navHtml = '<ul>';
 	$('#wiki-body h2').each(function() {
-		_wikiNavBar.append($(this).html());
+		_navHtml += '<li>'+$(this).html()+'</li>';
 	});
+	_navHtml += '</ul>';
+	_wikiNavBar.append();
+	
 });
