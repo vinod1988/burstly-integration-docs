@@ -26,9 +26,9 @@ $(window).load(function () {
     var _subSectionHeaders = _wikiBody.find('h2');
 
     // Handle updates on scrolling.
-    onScroll();
+    onWindowScroll();
     $(window).scroll(function() {
-    	onScroll();
+    	onWindowScroll();
 	});
 
 	$(window).resize(function() {
@@ -52,7 +52,7 @@ $(window).load(function () {
 		_wikiNavBar.width(_wikiNavBarSizer.width());
 	}
 
-	function onScroll()
+	function onWindowScroll()
 	{
 		var windowScrollTop = $(this).scrollTop();
     	var windowHeight = $(this).height();
