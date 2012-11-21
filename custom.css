@@ -19,3 +19,8 @@ body {
     position: fixed !important;
     top: 10px !important;
 }
+
+#wiki-rightbar a.current
+{
+    background: #ff0000;
+}

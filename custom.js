@@ -8,6 +8,10 @@ $(window).load(function () {
     var _navMargin = 10;
     var _sectionName = $('h1').text();
     var _navOffsetX = _wikiNavBar.offset().left;
+    var _sectionAnchor = _wikiNavBar.find('a:contains(\''+_sectionName+'\')');
+
+    // Add class to current anchor.
+    _sectionAnchor.addClass('current');
 
     // Add a div after the nav bar that we will use for sizing the nav bar when it is in a fixed position.
     _wikiNavBar.after('<div id="wiki-rightbar-sizer" style="width: 25%;"></div>');
@@ -44,7 +48,7 @@ $(window).load(function () {
 		_navHtml += '<li><a href="'+link+'">'+subSectionName+'</a></li>';
 	});
 	_navHtml += '</ul>';
-	_wikiNavBar.find('a:contains(\''+_sectionName+'\')').after(_navHtml);
+	_sectionAnchor.after(_navHtml);
 
 
 	function resizeFixedNav()
