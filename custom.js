@@ -18,11 +18,11 @@ $(window).load(function () {
 	// Create nav content.
 	var _navHtml = '<ul>';
 	$('#wiki-body h2').each(function() {
-		var sectionName = $(this).text();
+		var subSectionName = $(this).text();
 		var link = $(this).find('a:first').attr('href');
-		_navHtml += '<li><a href="'+link+'">'+sectionName+'</a></li>';
+		_navHtml += '<li><a href="'+link+'">'+subSectionName+'</a></li>';
 	});
 	_navHtml += '</ul>';
-	_wikiNavBar.find('a:contains('+_sectionName+')').insertAfter(_navHtml);
+	_wikiNavBar.find('a:contains("'+_sectionName+'"")').insertAfter(_navHtml);
 
 });
