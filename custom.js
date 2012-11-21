@@ -11,9 +11,9 @@ $(window).load(function () {
     var _navWidthRatio = _wikiNavBar.css('width') / _wikiBody.css('width');
 
     // Add a div after the nav bar that we will use for sizing the nav bar when it is in a fixed position.
-    _wikiNavBar.after('<div id="wiki-rightbar-sizer"></div>');
+    /*_wikiNavBar.after('<div id="wiki-rightbar-sizer"></div>');
     var _wikiNavBarSizer = $('#wiki-rightbar-sizer');
-    _wikiNavBarSizer.css('width', _navCSSWidth);
+    _wikiNavBarSizer.css('width', _navCSSWidth);*/
 
     $(window).scroll(function() {
     	var bodyTop = _wikiBodyTop - $(this).scrollTop();
