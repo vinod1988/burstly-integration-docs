@@ -30,14 +30,15 @@ body {
 
 #wiki-rightbar a.current
 {
-    background: #ffffff;
+    background: #444444;
+    color: #ffffff;
 }
 
 #wiki-rightbar ul
 {
 	background: #ffffff;
 	margin: 0px;
-	padding: 0px 0px 0px 7px;
+	padding: 0px 0px 0px 10px;
 }
 
 #wiki-rightbar li
