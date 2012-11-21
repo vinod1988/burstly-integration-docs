@@ -50,6 +50,11 @@ $(window).load(function () {
 	_navHtml += '</ul>';
 	_sectionAnchor.after(_navHtml);
 
+	// Load waypoints plugin.
+	$.getScript('res/js/waypoints.min.js', function(data, textStatus, jqxhr) {
+		alert('loaded waypoints');
+	});
+
 
 	function resizeFixedNav()
 	{
