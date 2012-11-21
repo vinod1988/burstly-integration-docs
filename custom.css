@@ -20,7 +20,17 @@ body {
     top: 10px !important;
 }
 
+#wiki-rightbar a
+{
+    font-size: 18px;
+}
+
 #wiki-rightbar a.current
 {
-    background: #ff0000;
+    background: #ffffff;
+}
+
+#wiki-rightbar li
+{
+    margin: 2px 0px;
 }
