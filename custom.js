@@ -33,10 +33,7 @@ $(window).load(function () {
 
 	$(window).resize(function() {
 		// Determine if we need to manually set the width of the nav bar.
-		if (_wikiNavBar.hasClass('fixed'))
-		{
-			resizeFixedNav();
-		}
+		resizeFixedNav();
 	});
 
 	// Create nav content.
