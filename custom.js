@@ -8,11 +8,12 @@ $(window).load(function () {
     var _navMargin = 10;
     var _sectionName = $('h1').text();
     var _navOffsetX = _wikiNavBar.offset().left;
-    var _navWidth = _wikiNavBar.innerWidth();
+    var _navCSSWidth = _wikiNavBar.css('width');
 
     // Add a div after the nav bar that we will use for sizing the nav bar when it is in a fixed position.
     _wikiNavBar.after('<div id="wiki-rightbar-sizer"></div>');
     var _wikiNavBarSizer = $('#wiki-rightbar-sizer');
+    _wikiNavBarSizer.css('width', _navCSSWidth);
 
     $(window).scroll(function() {
     	var bodyTop = _wikiBodyTop - $(this).scrollTop();
