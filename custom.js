@@ -6,7 +6,8 @@ $(window).load(function () {
     var _wikiBody = $('#wiki-body');
     var _wikiBodyTop = _wikiBody.offset().top;
     var _navMargin = 10;
-    var _sectionName = $('h1').text();
+    var _sectionHeader = $('h1');
+    var _sectionName = $(_sectionHeader).text();
     var _navOffsetX = _wikiNavBar.offset().left;
     var _sectionAnchor = _wikiNavBar.find('a:contains(\''+_sectionName+'\')');
     var _currentSubSection = null;
@@ -16,6 +17,11 @@ $(window).load(function () {
 
     // Add class to current anchor.
     _sectionAnchor.addClass('current');
+
+    // Add main title.
+    $(_sectionHeader).after('<h1>Burstly Documentation</h1>');
+    // Add section header to body.
+    _wikiBody.prepend(_sectionHeader);
 
     // Add a div after the nav bar that we will use for sizing the nav bar when it is in a fixed position.
     _wikiNavBar.after('<div id="wiki-rightbar-sizer" style="width: 25%;"></div>');
