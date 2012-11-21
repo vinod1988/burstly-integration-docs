@@ -30,6 +30,11 @@ body {
     background: #ffffff;
 }
 
+#wiki-rightbar ul
+{
+	background: #ffffff;
+}
+
 #wiki-rightbar li
 {
 	font-size: 14px;
