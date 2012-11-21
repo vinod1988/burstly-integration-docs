@@ -1,3 +1,3 @@
-[[iOS Guide]]  
-[[Android Guide]]  
-[[Configuring and Managing]]
+-[[iOS Guide]]  
+-[[Android Guide]]  
+-[[Configuring and Managing]]
