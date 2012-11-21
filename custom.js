@@ -56,6 +56,10 @@ $(window).load(function () {
 			if (posInWindow < windowHeight * 0.66)
 			{
 				currentSubSectionHeader = subSectionHeader;
+				if (posInWindow > 0)
+				{
+					i = len;
+				}
 			}
 			else
 			{
