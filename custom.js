@@ -8,8 +8,6 @@ $(window).load(function () {
     var _navMargin = 10;
     var _sectionName = $('h1').text();
     var _navOffsetX = _wikiNavBar.offset().left;
-    var _navWidthRatio = _wikiNavBar.innerWidth() / _wikiBody.innerWidth();
-    var _navWidthPercentage = Math.round(_navWidthRatio * 100);
 
     // Add a div after the nav bar that we will use for sizing the nav bar when it is in a fixed position.
     _wikiNavBar.after('<div id="wiki-rightbar-sizer" style="width: 25%;"></div>');
@@ -54,7 +52,6 @@ $(window).load(function () {
 
 	function resizeFixedNav()
 	{
-		//_wikiNavBar.css('width', _wikiBody.css('width') * _navWidthRatio);
 		_wikiNavBar.width(_wikiNavBarSizer.width());
 	}
 });
