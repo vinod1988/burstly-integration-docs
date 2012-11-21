@@ -21,6 +21,6 @@ $(window).load(function () {
 		_navHtml += '<li>'+$(this).html()+'</li>';
 	});
 	_navHtml += '</ul>';
-	_wikiNavBar.append();
-	
+	_wikiNavBar.append(_navHtml);
+
 });
