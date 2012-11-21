@@ -18,7 +18,7 @@ $(window).load(function () {
 	// Create nav content.
 	var _navHtml = '<ul>';
 	$('#wiki-body h2').each(function() {
-		var sectionName = $(this).html();
+		var sectionName = $(this).text();
 		var linkName = sectionName.replace(' ', '-');
 		_navHtml += '<li><a href="#'+linkName+'">'+sectionName+'</a></li>';
 	});
