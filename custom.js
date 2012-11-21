@@ -52,7 +52,18 @@ $(window).load(function () {
 
 	// Load waypoints plugin.
 	$.getScript('res/js/waypoints.min.js', function(data, textStatus, jqxhr) {
-		alert('loaded waypoints');
+		// Setup waypoints.
+		$('#wiki-body h2').each(function() {
+			var subSectionName = $(this).text();
+			$(this).waypoint(function() {
+				// Remove "current" class from all sub section links.
+				$(_wikiNavBar).find('li').each(function() {
+					$(this).removeClass('current');
+				});
+				// Add "current" class to corresponding sub section link.
+				_wikiNavBar.find('li:contains(\''+subSectionName+'\')').addClass('current');
+			});
+		});
 	});
 
 
