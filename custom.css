@@ -23,6 +23,7 @@ body {
 
 #wiki-rightbar a
 {
+	display: block;
     font-size: 18px;
 }
 
