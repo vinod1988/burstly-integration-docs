@@ -20,7 +20,7 @@ $(window).load(function () {
 	$('#wiki-body h2').each(function() {
 		var sectionName = $(this).text();
 		var link = $(this).find('a:first').attr('href');
-		_navHtml += '<li><a href="'+linkName+'">'+sectionName+'</a></li>';
+		_navHtml += '<li><a href="'+link+'">'+sectionName+'</a></li>';
 	});
 	_navHtml += '</ul>';
 	_wikiNavBar.append(_navHtml);
