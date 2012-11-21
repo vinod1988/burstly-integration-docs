@@ -25,6 +25,8 @@ $(window).load(function () {
     // These will be used to determine which nav links should highlight based on scroll position.
     var _subSectionHeaders = _wikiBody.find('h2');
 
+    // Handle updates on scrolling.
+    onScroll();
     $(window).scroll(function() {
     	onScroll();
 	});
