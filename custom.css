@@ -12,6 +12,7 @@ body {
 #wiki-rightbar
 {
     float: left !important;
+    padding: 7px 0px !important;
 }
 
 #wiki-rightbar.fixed
