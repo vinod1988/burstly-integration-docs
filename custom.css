@@ -9,6 +9,11 @@ body {
     clear: none !important;
 }
 
+#wiki-body h1
+{
+    margin-bottom: 10px;
+}
+
 #wiki-rightbar
 {
     float: left !important;
