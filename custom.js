@@ -26,7 +26,33 @@ $(window).load(function () {
     var _subSectionHeaders = _wikiBody.find('h2');
 
     $(window).scroll(function() {
-    	var windowScrollTop = $(this).scrollTop();
+    	onScroll();
+	});
+
+	$(window).resize(function() {
+		// Determine if we need to manually set the width of the nav bar.
+		resizeFixedNav();
+	});
+
+	// Create nav content.
+	var _navHtml = '<ul>';
+	$('#wiki-body h2').each(function() {
+		var subSectionName = $(this).text();
+		var link = $(this).find('a:first').attr('href');
+		_navHtml += '<li><a href="'+link+'">'+subSectionName+'</a></li>';
+	});
+	_navHtml += '</ul>';
+	_sectionAnchor.after(_navHtml);
+
+
+	function resizeFixedNav()
+	{
+		_wikiNavBar.width(_wikiNavBarSizer.width());
+	}
+
+	function onScroll()
+	{
+		var windowScrollTop = $(this).scrollTop();
     	var windowHeight = $(this).height();
     	var bodyTop = _wikiBodyTop - windowScrollTop;
     	if (bodyTop < 10)
@@ -83,42 +109,5 @@ $(window).load(function () {
 			// Add "current" class to corresponding sub section link.
 			_wikiNavBar.find('li:contains(\''+subSectionName+'\')').addClass('current');
     	}
-	});
-
-	$(window).resize(function() {
-		// Determine if we need to manually set the width of the nav bar.
-		resizeFixedNav();
-	});
-
-	// Create nav content.
-	var _navHtml = '<ul>';
-	$('#wiki-body h2').each(function() {
-		var subSectionName = $(this).text();
-		var link = $(this).find('a:first').attr('href');
-		_navHtml += '<li><a href="'+link+'">'+subSectionName+'</a></li>';
-	});
-	_navHtml += '</ul>';
-	_sectionAnchor.after(_navHtml);
-
-	// Load waypoints plugin.
-	/*$.getScript('res/js/waypoints.min.js', function(data, textStatus, jqxhr) {
-		// Setup waypoints.
-		$('#wiki-body h2').each(function() {
-			var subSectionName = $(this).text();
-			$(this).waypoint(function() {
-				// Remove "current" class from all sub section links.
-				$(_wikiNavBar).find('li').each(function() {
-					$(this).removeClass('current');
-				});
-				// Add "current" class to corresponding sub section link.
-				_wikiNavBar.find('li:contains(\''+subSectionName+'\')').addClass('current');
-			});
-		});
-	});*/
-
-
-	function resizeFixedNav()
-	{
-		_wikiNavBar.width(_wikiNavBarSizer.width());
 	}
 });
