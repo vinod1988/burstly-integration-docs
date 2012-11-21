@@ -13,3 +13,9 @@ body {
 {
     float: left !important;
 }
+
+#wiki-rightbar .fixed
+{
+    position: fixed !important;
+    top: 10px !important;
+}

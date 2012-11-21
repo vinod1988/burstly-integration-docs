@@ -9,9 +9,19 @@ $(window).load(function () {
     var _navOffsetX = _wikiNavBar.offset().left;
 
     $(window).scroll(function() {
-		var scrollNavTo = Math.max(_wikiBodyTop, $(this).scrollTop() + _navMargin);
-		
-		_wikiNavBar.offset({left: _navOffsetX, top: scrollNavTo});
+    	var bodyTop = _wikiBodyTop - $(this).scrollTop();
+    	if (bodyTop < 10)
+    	{
+    		// Make sure fix position is applied for nav bar.
+    		_wikiNavBar.addClass('fixed');
+    	}
+    	else
+    	{
+    		// Make sure relative position is applied for nav bar.
+    		_wikiNavBar.removeClass('fixed');
+    	}
+		//var scrollNavTo = Math.max(_wikiBodyTop, $(this).scrollTop() + _navMargin);
+		//_wikiNavBar.offset({left: _navOffsetX, top: scrollNavTo});
 	});
 
 	// Get page name
