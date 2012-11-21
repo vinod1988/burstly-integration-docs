@@ -21,6 +21,16 @@ $(window).load(function () {
     _wikiNavBar.after('<div id="wiki-rightbar-sizer" style="width: 25%;"></div>');
     var _wikiNavBarSizer = $('#wiki-rightbar-sizer');
 
+    // Create nav content.
+	var _navHtml = '<ul>';
+	$('#wiki-body h2').each(function() {
+		var subSectionName = $(this).text();
+		var link = $(this).find('a:first').attr('href');
+		_navHtml += '<li><a href="'+link+'">'+subSectionName+'</a></li>';
+	});
+	_navHtml += '</ul>';
+	_sectionAnchor.after(_navHtml);
+
     // Create list of sub section elements.
     // These will be used to determine which nav links should highlight based on scroll position.
     var _subSectionHeaders = _wikiBody.find('h2');
@@ -35,16 +45,6 @@ $(window).load(function () {
 		// Determine if we need to manually set the width of the nav bar.
 		resizeFixedNav();
 	});
-
-	// Create nav content.
-	var _navHtml = '<ul>';
-	$('#wiki-body h2').each(function() {
-		var subSectionName = $(this).text();
-		var link = $(this).find('a:first').attr('href');
-		_navHtml += '<li><a href="'+link+'">'+subSectionName+'</a></li>';
-	});
-	_navHtml += '</ul>';
-	_sectionAnchor.after(_navHtml);
 
 
 	function resizeFixedNav()
