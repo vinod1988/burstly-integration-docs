@@ -46,11 +46,11 @@ body {
 	font-size: 14px !important;
     margin: 2px 0px 2px 0px;
     list-style-type: none;
+    padding: 0px 0px 0px 17px;
 }
 
 #wiki-rightbar li.current
 {
 	background: #999999;
 	color: #ffffff;
-	padding: 0px 0px 0px 17px;
 }
