@@ -54,7 +54,7 @@ $(window).load(function () {
 
 	function resizeFixedNav()
 	{
-		_wikiNavBar.width(_wikiBody.css('width') * _navWidthRatio);
+		_wikiNavBar.css('width', _wikiBody.css('width') * _navWidthRatio);
 		//_wikiNavBar.width(_wikiNavBarSizer.width());
 	}
 });
