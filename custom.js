@@ -56,7 +56,7 @@ $(window).load(function () {
 			if (posInWindow < windowHeight * 0.66)
 			{
 				currentSubSectionHeader = subSectionHeader;
-				if (posInWindow > -1)
+				if (posInWindow + $(subSectionHeader).height() > -1)
 				{
 					i = len;
 				}
