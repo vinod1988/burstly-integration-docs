@@ -51,6 +51,6 @@ body {
 
 #wiki-rightbar li.current
 {
-	background: #999999;
-	color: #ffffff;
+	background: #999999 !important;
+	color: #ffffff !important;
 }
