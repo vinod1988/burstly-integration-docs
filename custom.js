@@ -6,11 +6,12 @@ $(window).load(function () {
     var _wikiBodyTop = _wikiBody.offset().top;
     var _navMargin = 10;
     var _sectionName = $('h1').text();
+    var _navOffsetX = _wikiNavBar.offset().left;
 
     $(window).scroll(function() {
 		var scrollNavTo = Math.max(_wikiBodyTop, $(this).scrollTop() + _navMargin);
-		var navOffset = _wikiNavBar.offset();
-		_wikiNavBar.offset({left: navOffset.left, top: scrollNavTo});
+		
+		_wikiNavBar.offset({left: _navOffsetX, top: scrollNavTo});
 	});
 
 	// Get page name
