@@ -10,6 +10,9 @@ $(window).load(function () {
     var _navOffsetX = _wikiNavBar.offset().left;
     var _sectionAnchor = _wikiNavBar.find('a:contains(\''+_sectionName+'\')');
 
+    // Add class to all section anchors.
+    _wikiNavBar.find('a').addClass('section');
+
     // Add class to current anchor.
     _sectionAnchor.addClass('current');
 

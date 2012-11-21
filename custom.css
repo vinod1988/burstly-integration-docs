@@ -21,7 +21,7 @@ body {
     top: 10px !important;
 }
 
-#wiki-rightbar a
+#wiki-rightbar a.section
 {
 	display: block;
     font-size: 18px;
