@@ -23,6 +23,6 @@ $(window).load(function () {
 		_navHtml += '<li><a href="'+link+'">'+subSectionName+'</a></li>';
 	});
 	_navHtml += '</ul>';
-	_wikiNavBar.find('a:contains("'+_sectionName+'")').insertAfter(_navHtml);
+	_wikiNavBar.find('a:contains(\''+_sectionName+'\')').insertAfter(_navHtml);
 
 });
