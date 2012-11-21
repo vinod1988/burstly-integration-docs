@@ -51,7 +51,7 @@ $(window).load(function () {
     	while (i < len)
     	{
     		var subSectionHeader = _subSectionHeaders[i];
-    		var posInWindow = subSectionHeader.offset().top - windowScrollTop;
+    		var posInWindow = $(subSectionHeader).offset().top - windowScrollTop;
     		// Determine if the sub-section header is above the bottom third of the window.
 			if (posInWindow < windowHeight * 0.66)
 			{
