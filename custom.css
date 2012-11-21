@@ -38,7 +38,7 @@ body {
 {
 	background: #ffffff;
 	margin: 0px;
-	padding: 0px 0px 0px 10px;
+	padding: 0px;
 }
 
 #wiki-rightbar li
@@ -50,5 +50,7 @@ body {
 
 #wiki-rightbar li.current
 {
-	background: #777777;
+	background: #999999;
+	color: #ffffff;
+	padding: 0px 0px 0px 17px;
 }
