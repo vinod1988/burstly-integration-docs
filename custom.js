@@ -22,7 +22,7 @@ $(window).load(function () {
     window.document.title = _sectionName+' | Burstly';
 
     // Add logo to section header.
-    _sectionHeader.before('<img src="res/img/burstly_logo_128.png"></img>');
+    _sectionHeader.before('<img src="res/img/burstly_logo_64.png" id="logo"></img>');
 
     // Add a div after the nav bar that we will use for sizing the nav bar when it is in a fixed position.
     _wikiNavBar.after('<div id="wiki-rightbar-sizer" style="width: 25%;"></div>');

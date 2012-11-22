@@ -3,6 +3,11 @@ body {
   padding: 0px;
 }
 
+#head #logo
+{
+    float: left;
+}
+
 #wiki-body
 {
     float: right !important;
