@@ -21,10 +21,8 @@ $(window).load(function () {
     // Set window title.
     window.document.title = _sectionName+' | Burstly';
 
-    // Add main title.
-    //$(_sectionHeader).after('<h1>Burstly Documentation</h1>');
-    // Add section header to body.
-    //_wikiBody.prepend(_sectionHeader);
+    // Add logo to section header.
+    _sectionHeader.before('<img src="res/img/burstly_logo_128.png"></img>');
 
     // Add a div after the nav bar that we will use for sizing the nav bar when it is in a fixed position.
     _wikiNavBar.after('<div id="wiki-rightbar-sizer" style="width: 25%;"></div>');
