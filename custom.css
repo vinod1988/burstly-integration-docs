@@ -6,6 +6,12 @@ body {
 #head #logo
 {
     float: left;
+    margin-right: 10px;
+}
+
+#head h1
+{
+    margin-top: 20px;
 }
 
 #wiki-body
