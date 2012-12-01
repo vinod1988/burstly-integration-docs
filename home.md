@@ -19,4 +19,5 @@ The Burstly platform offers a number key advantages to effectively handle your a
 
 ##Where can I download your SDK?
 
-We have all our SDKs available on Github at [[http://www.github.com/Burstly/Burstly-SDKs]]
+- [[Burstly iOS SDK|https://s3.amazonaws.com/sdk.burstly.com/builds/ios/convenience_layer/generic/BurstlySDK_iOS_CL.zip]]
+- [[Burstly Android SDK|https://s3.amazonaws.com/sdk.burstly.com/builds/android/convenience_layer/generic/BurstlySDK_Android_CL.zip]]
