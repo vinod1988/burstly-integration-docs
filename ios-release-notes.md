@@ -1,10 +1,22 @@
-1.35.0.30428
+#iOS Release Notes
+
+Current SDK Version: 1.35.0.30428
 
 Important: 
 Please set Base SDK to iOS 6.0 and Deployment target to whatever your lower support OS version is (4.3+ recommended). 
 For detailed step by step setup instructions visit docs.burstly.com
 
-Changes:
+##3rd Party SDK Versions
+
+	Admob - Version: 6.2.1
+	Flurry Link - Version: 3.1.2
+	Greystripe - Version: 3.2.1
+	iAD - N/A
+	InMobi -  Version: 3.6.3
+	JumpTap - Version: 2.0.16.0
+	Millennial Media - Version: 4.6.1
+
+##1.35
 
 1.35.0.30428 - The following bugs & features were resolved:
 - Updated InMobi to version 3.6.3
@@ -56,6 +68,8 @@ Changes:
 - Dropped client-side support for AdColony SDK
 - Removed support for ARMv6 architecture (may be reintroduced later)
 
+##1.34
+
 1.34.0.25524 - The following bugs & features were resolved:
 - Updated Millennial SDK to version 4.6
 
@@ -89,6 +103,8 @@ Changes:
 - Fixed incorrect callbacks for JumpTap expandables
 - Fixed SDK opening wrong apps when destination URL is set to nil
 - Fixed issue with opening iframes in internal web browser
+
+##1.33
 
 1.33.0.8703 - The following bugs & features were resolved:
 - Added support for interstitials expiration
@@ -130,6 +146,8 @@ Changes:
 - Updated reachability library to version 2.2
 - Added the possibility for view controllers to auto-rotate based on publisher's in-app orientation
 
+##1.32
+
 1.32.0.8289 - The following bugs & features were resolved:
 - Removed UDID access
 
@@ -154,6 +172,8 @@ Changes:
 - Updated and changed API of app presence tracker component
 - Splitted each ad network controllers into two entities: universal controller and ad network adaptor (refactoring)
 - Removed processing of dates from cookies (performance improvement)
+
+##1.31
 
 1.31.0.7725 - The following bugs & features were resolved:
 - Fixed issue when precaching unexpectadly change offerwall orientation in landscape
@@ -180,6 +200,8 @@ Changes:
 - Fixed an issue with a video skip button not working from time to time
 - Added logic to pass web user agent string to the server for correct server-side feeds integration
 
+##1.30
+
 1.30.0.7079 - The following bugs & features were resolved:
 - Fixed an issue with delegate ModalTransitionStyle property being ignored for Rewards
 - Fixed an issue when didLoad callback is fired for iAd but no iAd ad is actually displayed
@@ -197,6 +219,8 @@ Changes:
 - Fixed "X" button transparent background issue on Rewards
 - Updated Admob SDK to version 5.0.5
 
+##1.29
+
 1.29.0.6657 - The following bugs & features were resolved:
 - Fixed video being tracked even if it isn't played
 - Fixed Skip and Visit Site buttons sometimes not being displayed in video ads
@@ -212,6 +236,8 @@ Changes:
 - Reviewed JumpTap 2.0.14.1 integration for iOS5.0
 - Integrated a new wrapper for Flurry SDK
 - Rewritten iAd integration entirely
+
+##1.28
 
 1.28.0.6405 - The following bugs & features were resolved:
 - Currency management API is significantly changed, UserId is added
@@ -232,6 +258,8 @@ Changes:
 - Updated AdColony SDK to version 1.9.7
 - Download tracker doesn't use /Documents dir any more
 
+##1.27
+
 1.27.0.2100 - The following bugs & features were resolved:
 - Integrated Ad Colony 1.9.6
 - Updated AdMob SDK to version 4.1.1
@@ -244,12 +272,16 @@ Changes:
 - Added close button delay for Burstly interstitials
 - Fixed a leak caused by iAd controller being not associated with AdBannerView
 - Changed iAd implementation: ADBannerView is removed from the view hierarchy when there is no fill from iAd (no hidden rotation any more)
+
+##1.26
 	
 1.26.0.2085 - The following bugs & features were resolved:
 - Added support for house video and download offers
 - Added support for third-party offers (server-side integration)
 - Implemented a first version of currency API
 - Implemented offerwall interstitial
+
+##1.25
 
 1.25.0.2073 - The following bugs & features were resolved:
 - Added possibility to set refresh rate on server for Burstly ads
@@ -267,6 +299,8 @@ Changes:
 - Fixed performance issue with NSDateFormatter being recreated for each network request
 - Fixed some memory management issues and leaks
 
+##1.24
+
 1.24.0.2024 - The following bugs & features were resolved:
 - Updated Mobclix SDK to version 4.3.3
 - Updated Millennial SDK to version 4.2.3
@@ -276,6 +310,8 @@ Changes:
 - Added support for OfferWalls (ad server communication protocol changes)
 - Integrated TapJoy OfferWall SDK 7.4.0
 - Implemented native Burstly OfferWall component
+
+##1.23
 
 1.23.1.2003 - The following bugs & features were resolved:
 - Fixed: setPaused:YES does not pause autorefresh timer
@@ -290,6 +326,8 @@ Changes:
 - Updated iVdopia to version 3.4.9
 - Updated Greystripe to version 3.1.2
 
+##1.22
+
 1.22.0.1995 - The following bugs & features were resolved:
 - Updated iVdopia SDK to to version 3.4.7 (fixes a crash with iVdopia ad manager deallocation)
 - Improved user agent information reporting (reports more system information such as actual device type for better targeting)
@@ -302,6 +340,8 @@ Changes:
 - Fixed: clicks aren't tracked for Millenial fullscreen ads
 - Fixed: crash after getting 'ivdopia' ad with fullscreen parameters
 
+##1.21
+
 1.21.0.1989 - The following bugs & features were resolved:
 - Updated Mobclix to version 4.1.6.
 - Updated Millennial to version 4.0.5.
@@ -312,17 +352,3 @@ Changes:
 - Fixed a crash which used to happen occasionally after device rotation.
 - Fixed a crash after tapping a video ad with video that is actually unavailable.
 - Changed build versioning schema. Now it has the following format: Major.Minor.Patch.Build.
-
-...
-
-
-###################
-SDK VERSIONS
-
-Admob - Version: 6.2.1
-Flurry Link - Version: 3.1.2
-Greystripe - Version: 3.2.1
-iAD - N/A
-InMobi -  Version: 3.6.3
-JumpTap - Version: 2.0.16.0
-Millennial Media - Version: 4.6.1
