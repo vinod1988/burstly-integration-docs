@@ -4,13 +4,15 @@ $(window).load(function () {
     var _wikiHeader = $('#head');
     var _wikiNavBar = $('#wiki-rightbar');
     var _wikiBody = $('#wiki-body');
+    var _wikiFooter = $('#footer');
     var _wikiBodyTop = _wikiBody.offset().top;
-    var _navMargin = 10;
     var _sectionHeader = $('h1');
     var _sectionName = $(_sectionHeader).text();
     var _navOffsetX = _wikiNavBar.offset().left;
     var _sectionAnchor = _wikiNavBar.find('a:contains(\''+_sectionName+'\')');
     var _currentSubSection = null;
+    var _navTopMargin = 10;
+    var _navBottomMargin = 40;
 
     // Add class to all section anchors.
     _wikiNavBar.find('a').addClass('section');
@@ -48,6 +50,8 @@ $(window).load(function () {
     	onWindowScroll();
 	});
 
+    // Handle window resizing.
+    resizeFixedNav();
 	$(window).resize(function() {
 		// Determine if we need to manually set the width of the nav bar.
 		resizeFixedNav();
@@ -56,6 +60,14 @@ $(window).load(function () {
 
 	function resizeFixedNav()
 	{
+        // Adjust height of nav bar to fit within window.
+        var windowHeight = $(this).height();
+        var navHeight = windowHeight - _navBottomMargin;
+        var windowScrollTop = $(this).scrollTop();
+        _wikiNavBar.height(navHeight);
+        
+
+        // Adjust nav bar width.
 		_wikiNavBar.width(_wikiNavBarSizer.width());
 	}
 
@@ -64,7 +76,7 @@ $(window).load(function () {
 		var windowScrollTop = $(this).scrollTop();
     	var windowHeight = $(this).height();
     	var bodyTop = _wikiBodyTop - windowScrollTop;
-    	if (bodyTop < 10)
+    	if (bodyTop < _navTopMargin)
     	{
     		// Make sure fix position is applied for nav bar.
     		if (!_wikiNavBar.hasClass('fixed'))
@@ -120,21 +132,11 @@ $(window).load(function () {
     	}
 	}
 
-    // Google analytics code.
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-36799344-1']);
-    _gaq.push(['_trackPageview']);
-    (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-
 });
 
 // Google analytics code.
 var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-36799344-1']);
+_gaq.push(['_setAccount', 'UA-12719703-9']);
 _gaq.push(['_trackPageview']);
 (function() {
     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
