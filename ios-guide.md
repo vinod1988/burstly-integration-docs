@@ -273,6 +273,31 @@ It his highly recommended that you pre-cache interstitials before displaying the
         }
 
 
+##Integration Mode
+
+You can use integration mode to test the functionality of 3rd party ad networks. Keep in mind that enabling integration mode for an ad will disregard the app/zone IDs that you have specified in the init method. Below is how you use integration mode for a banner. Be sure to import "BurstlyAdRequest.h".
+
+    [self.bannerView.adRequest setIntegrationModeWithTestNetwork:kBurstlyTestAdmob filterDeviceMacAddresses:nil];
+
+In the above example, a test banner will be loaded from the AdMob ad network. The method for loading a test interstitial is the same.  
+
+    [self.interstitial.adRequest setIntegrationModeWithTestNetwork:kBurstlyTestAdmob filterDeviceMacAddresses:nil];
+
+###Test Networks
+
+You can swap "kBurstlyTestAdmob" with one of the following enum values to test different ad networks: 
+
+- kBurstlyTestGreystripe - Test ads from the Greystripe ad network
+- kBurstlyTestInmobi - Test ads from the InMobi ad network
+- kBurstlyTestIad - Test ads from the iAd ad network
+- kBurstlyTestJumptap - Test ads from the Jumptap ad network
+- kBurstlyTestMillennial - Test ads from the Millennial ad network
+
+###Integration Mode Safe-Guard
+
+We recommend passing in an array of device MAC addresses (NSString) to the "setIntegrationModeWithTestNetwork:filterDeviceMacAddresses:" method. This will ensure that when deployed to a device, integration mode will only be enabled if the device MAC address is among those specified in the array. This should prevent anyone from accidentally deploying an app to the public that only serves test ads.  
+
+
 ##Walkthroughs and Advanced Topics
 
 See the [Burstly Site Map](http://support.burstly.com/kb/support/site-map "Burstly Site Map") for walkthroughs and information on advanced topics: http://support.burstly.com/kb/support/site-map
