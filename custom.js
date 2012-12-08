@@ -61,10 +61,10 @@ $(window).load(function () {
 	function resizeFixedNav()
 	{
         // Adjust height of nav bar to fit within window.
-        var windowHeight = $(this).height();
-        var navHeight = windowHeight - _navBottomMargin;
-        var windowScrollTop = $(this).scrollTop();
-        _wikiNavBar.height(navHeight);
+        //var windowHeight = $(this).height();
+        //var navHeight = windowHeight - _navBottomMargin;
+        //var windowScrollTop = $(this).scrollTop();
+        //_wikiNavBar.height(navHeight);
         
 
         // Adjust nav bar width.
