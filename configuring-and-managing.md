@@ -189,3 +189,31 @@ The string passed from the client is parsed and tested against the decision rule
 - Sample decision rule to target users that are 21+ and female:  
 
         (age>=21)&&(gender=female)
+
+
+##Rewards
+
+The Burstly Rewards platform provides the functionality for your apps to display incentivised advertising which reward virtual currency for completing an action. Burstly Rewards allows you to mediate between your own House, Directly sold offers and Third Party networks in order to maximize revenue opportunities.
+
+###Placements
+
+Burstly Rewards placements are generally divided into three categories:  
+
+- Banners (320x50)  
+    Rewards Banners behave like traditional banners. Tapping a Banner will show a full screen Page. You can even mix incentivized and traditional advertisements within the same zones.  
+
+[[res/img/offerbanner_normal.jpg]]
+
+- Pages (Full Screen)  
+    Rewards Pages behave like traditional banners and interstitials. You can trigger a Page directly as an interstitial. You can even mix incentivized and traditional advertisements within the same zones.  
+
+[[res/img/offerpage_normal.jpg]]
+
+- Walls (Full Screen)  
+    The Wall is a full screen experience that provides the opportunity to present the user with a host of offers to choose from. Generally, whenever the user has an option to buy or spend virtual currency in your app, you should give them the option to earn currency by displaying a Wall. This allows you to earn revenue from users who would otherwise be unable or unwilling to make purchases. The Offer Wall is presented and controlled much like a traditional interstitial.  
+
+[[res/img/offerwall_normal.jpg]]
+
+###Customization
+
+The Burstly Rewards offering supports several customization options to allow you to make your rewards match the look and feel of your game in order to provide a better experience to your users which feels more tightly integrated with your title. [[View the full customization options documentation here|http://support.burstly.com/kb/rewards/burstly-rewards-design-guide-contents]].
