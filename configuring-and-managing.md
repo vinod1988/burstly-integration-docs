@@ -217,3 +217,26 @@ Burstly Rewards placements are generally divided into three categories:
 ###Customization
 
 The Burstly Rewards offering supports several customization options to allow you to make your rewards match the look and feel of your game in order to provide a better experience to your users which feels more tightly integrated with your title. [[View the full customization options documentation here|http://support.burstly.com/kb/rewards/burstly-rewards-design-guide-contents]].
+
+###Displaying Reward Placements
+
+IMPORTANT: You must initialize the currency manager form your application to display reward placements.
+
+iOS
+
+    // Replace YOUR_APP_ID with the application ID that you received from the Burstly Dashboard
+    currencyManager = [BurstlyCurrency sharedCurrencyManager];
+    [currencyManager setPublisherId:YOUR_APP_ID];
+
+Android
+
+    // Replace YOUR_APP_ID with the application ID that you received from the Burstly Dashboard
+    // "this" should be an instance of Activity
+    mCurrencyManager = new CurrencyManager();
+    mCurrencyManager.initManager(this, YOUR_APP_ID);
+
+If you have already integrated the Burstly SDK into your title then the code to display reward placements is the same as any other banner or interstitial. If you have never integrated the Burstly SDK these walkthroughs will give you an understanding of what steps are involved in integrating banners and/or interstitials:
+
+- [[iOS Guide]]  
+- [[Android Guide]]  
+
