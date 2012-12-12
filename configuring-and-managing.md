@@ -218,6 +218,22 @@ Burstly Rewards placements are generally divided into three categories:
 
 The Burstly Rewards offering supports several customization options to allow you to make your rewards match the look and feel of your game in order to provide a better experience to your users which feels more tightly integrated with your title. [[View the full customization options documentation here|http://support.burstly.com/kb/rewards/burstly-rewards-design-guide-contents]].
 
+###Configuring Rewards
+
+Below is a breakdown of the documents that make up the complete Burstly Rewards design guide. Studying these steps can help optimize mobile performance and help you improve conversion results.
+
+1. [[Rewards Flow Overview|http://support.burstly.com/kb/rewards/burstly-rewards-rewards-flow]]
+
+2. [[Enable Your App|http://support.burstly.com/kb/rewards/set-up-a-reward-step-1-enable-rewards-for-your-app]]
+
+3. [[Set up a Zone|http://support.burstly.com/kb/rewards/set-up-a-reward-step-2-set-up-zone-for-your-reward]]
+
+4. [[Create An Offer and Entry Point|http://support.burstly.com/kb/rewards/set-up-a-reward-step-3-create-your-first-offer]]
+
+5. [[Assign and Manage Entry Points|http://support.burstly.com/kb/rewards/set-up-a-reward-step-4-assign-and-manage-entry-points]]
+
+6. [[Edit Offers and Entry Points|http://support.burstly.com/kb/rewards/setting-up-a-reward-step-5-edit-your-offer-and-entry-points]]
+
 ###Displaying Reward Placements
 
 IMPORTANT: You must initialize the currency manager form your application to display reward placements.
