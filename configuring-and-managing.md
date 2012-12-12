@@ -202,17 +202,17 @@ Burstly Rewards placements are generally divided into three categories:
 - Banners (320x50)  
     Rewards Banners behave like traditional banners. Tapping a Banner will show a full screen Page. You can even mix incentivized and traditional advertisements within the same zones.  
 
-[[res/img/offerbanner_normal.jpg]]
+    [[res/img/offerbanner_normal.jpg]]
 
 - Pages (Full Screen)  
     Rewards Pages behave like traditional banners and interstitials. You can trigger a Page directly as an interstitial. You can even mix incentivized and traditional advertisements within the same zones.  
 
-[[res/img/offerpage_normal.jpg]]
+    [[res/img/offerpage_normal.jpg]]
 
 - Walls (Full Screen)  
     The Wall is a full screen experience that provides the opportunity to present the user with a host of offers to choose from. Generally, whenever the user has an option to buy or spend virtual currency in your app, you should give them the option to earn currency by displaying a Wall. This allows you to earn revenue from users who would otherwise be unable or unwilling to make purchases. The Offer Wall is presented and controlled much like a traditional interstitial.  
 
-[[res/img/offerwall_normal.jpg]]
+    [[res/img/offerwall_normal.jpg]]
 
 ###Customization
 
