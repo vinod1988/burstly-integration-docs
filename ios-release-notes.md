@@ -3,7 +3,7 @@
 Current SDK Version: 1.35.0.30428
 
 Important: 
-Please set Base SDK to iOS 6.0 and Deployment Target to whatever your lower support OS version is (4.3+ recommended).
+Please set Base SDK to iOS 6.0 and Deployment Target to whatever your lowest support OS version is (4.3+ recommended).
 
 ##3rd Party SDK Versions
 
