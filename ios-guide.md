@@ -2,7 +2,7 @@
 
 ##Introduction
 
-The Burstly SDK is a static library that consists of a set of methods that you can invoke to display advertisements of varying sizes in your application.You can take advantages of the static library through it's Application Programming Interface (API). The Burstly API includes a set of headers that detail the available classes, protocols (an objective-c standard to subscribe for callbacks) and methods. A typical integration would entail adding the headers and the library to your project and invoking the available calls in the headers to display your ads. An advanced use case may involve displaying multiple ad units (typically banners and interstitials) across multiple views. This may require you to maintain a data structure of certain classes that correspond to these ad types. As a developer, you may be building your apps on multiple environments such as OPENGL based engines, Unity/MonoTouch and Cocos2D. While Burstly supports these frameworks, you may require additional tweaks to your implementation to support native features and standard UX guidelines.
+The Burstly SDK is a static library that consists of methods that you can invoke to display advertisements of varying sizes in your application. The Burstly API includes a set of headers that detail the available classes, protocols and methods. A typical integration would entail adding the headers and the library to your project and invoking the available calls in the headers to display your ads. An advanced use case may involve displaying multiple ad units (typically banners and interstitials) across multiple views. This may require you to maintain a data structure of certain classes that correspond to these ad types.
 
 
 ##SDK Integration
