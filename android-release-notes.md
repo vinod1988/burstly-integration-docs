@@ -10,6 +10,22 @@ Current SDK Version: 1.17.0.30227
     Amazon 3.6.0
     iVdopia 1.4.7
 
+##1.17
+
+###Manifest Changes
+None. 
+
+###Public API Changes
+None.
+
+###Updated Ad Networks
+Smaato removed  
+Greystripe 2.0-> 2.0.1  
+AdMob 6.0.1->6.2.1  
+
+###Additional Notable Changes
+MRAID 1.0 Support
+
 ##1.16
 ###Manifest Changes
 The BurstlyFullscreenActivity manifest entry now requires the "configChanges" flag "screenSize".  The new activity entry should look like this:
