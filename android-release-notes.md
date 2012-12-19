@@ -27,6 +27,6 @@ New runtime exceptions to help catch threading issues - In Android all View call
 Ability to Enable/Disable Back Button on the BurstlyFullscreenActivity - You may now enable and disable the back button while inside of the BurstlyFullscreenActivity which is used to display your house and direct ads. BurstlyFullscreenActivity.setBackButtonEnabled(boolean enabled) can be used for this purpose.
 
 ###Minor changes / Bug Fixes
-Jumptap banner display issue.
-Click tracking callback pixel changes.
+Jumptap banner display issue.  
+Click tracking callback pixel changes.  
 Cached interstitial expiration.
