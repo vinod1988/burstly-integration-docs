@@ -10,6 +10,54 @@ Current SDK Version: 1.17.0.30227
     Amazon 3.6.0
     iVdopia 1.4.7
 
+##1.16
+###Manifest Changes
+The BurstlyFullscreenActivity manifest entry now requires the "configChanges" flag "screenSize".  The new activity entry should look like this:
+
+        <!-- Burstly ================================================= -->
+        <activity
+            android:name="com.burstly.lib.component.networkcomponent.burstly.BurstlyFullscreenActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+
+In addition Greystripe has changed their manifest entry to be the following:
+        <!-- Greystripe ============================================== -->
+        <activity
+            android:name="com.greystripe.sdk.GSFullscreenActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation" />
+
+And Millenial's Activity tags should look like:
+        <!-- Millenial ================================================= -->       
+        <activity 
+            android:name="com.millennialmedia.android.MMActivity" 
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="keyboardHidden|orientation|keyboard"/>
+        <activity android:name="com.millennialmedia.android.VideoPlayer" 
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:configChanges="keyboardHidden|orientation|keyboard"/>
+
+Finally the Amazon SDK requires the manifest entry:
+        <!-- Amazon =================================================== -->
+        <activity
+            android:name="com.amazon.mobileads.mraid.MraidBrowser"
+            android:configChanges="keyboardHidden|orientation" />
+        <activity
+            android:name="com.amazon.mobileads.video.VideoActionHandler"
+            android:configChanges="keyboardHidden|orientation" />
+
+###Public API Changes
+None.
+###Updated Ad Networks
+New network Amazon A9 version 3.6.0 added  
+Medialets SDK removed  
+Greystripe 1.6.1-> 2.0  
+Inmobi 3.5.0 -> 3.5.3  
+
+###Additional Notable Changes
+Millenial adNetworkDismissFullScreen fix  
+Rare BurstlySdk.shutDown crash fix  
+Rewards Wall user experience improvements  
+
 ##1.15
 ###Manifest Changes
 None
