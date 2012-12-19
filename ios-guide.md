@@ -296,8 +296,3 @@ You can swap "kBurstlyTestAdmob" with one of the following enum values to test d
 ###Integration Mode Safe-Guard
 
 We recommend passing in an array of device MAC addresses (NSString) to the "setIntegrationModeWithTestNetwork:filterDeviceMacAddresses:" method. This will ensure that when deployed to a device, integration mode will only be enabled if the device MAC address is among those specified in the array. This should prevent anyone from accidentally deploying an app to the public that only serves test ads.  
-
-
-##Walkthroughs and Advanced Topics
-
-See the [Burstly Site Map](http://support.burstly.com/kb/support/site-map "Burstly Site Map") for walkthroughs and information on advanced topics: http://support.burstly.com/kb/support/site-map
