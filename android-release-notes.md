@@ -21,12 +21,14 @@ The BurstlyFullscreenActivity manifest entry now requires the "configChanges" fl
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
 
 In addition Greystripe has changed their manifest entry to be the following:
+
         <!-- Greystripe ============================================== -->
         <activity
             android:name="com.greystripe.sdk.GSFullscreenActivity"
             android:configChanges="keyboard|keyboardHidden|orientation" />
 
 And Millenial's Activity tags should look like:
+
         <!-- Millenial ================================================= -->       
         <activity 
             android:name="com.millennialmedia.android.MMActivity" 
@@ -37,6 +39,7 @@ And Millenial's Activity tags should look like:
             android:configChanges="keyboardHidden|orientation|keyboard"/>
 
 Finally the Amazon SDK requires the manifest entry:
+
         <!-- Amazon =================================================== -->
         <activity
             android:name="com.amazon.mobileads.mraid.MraidBrowser"
