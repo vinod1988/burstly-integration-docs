@@ -39,6 +39,7 @@ body {
     margin-bottom: 10px;
 }
 
+/* Note that "rightbar" is now positioned on the left*/
 #wiki-rightbar
 {
     float: left !important;
@@ -89,4 +90,9 @@ body {
 #wiki-rightbar li.current a
 {
 	color: #ffffff !important;
+}
+
+.has-rightbar #wiki-footer {
+    width: 70%;
+    float: right !important;
 }
