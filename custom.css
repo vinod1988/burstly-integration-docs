@@ -1,5 +1,3 @@
-/* Test Comment */
-
 body {
   margin: 0px;
   padding: 0px;
@@ -32,11 +30,16 @@ body {
 {
     float: right !important;
     clear: none !important;
+    margin-bottom: 10px !important;
 }
 
 #wiki-body h1
 {
     margin-bottom: 10px;
+}
+
+#wiki-body ul li {
+    margin-top: -.6em !important;
 }
 
 /* Note that "rightbar" is now positioned on the left*/
@@ -93,6 +96,7 @@ body {
 }
 
 .has-rightbar #wiki-footer {
-    width: 70%;
+    width: 68%;
+    margin-right: 3%;
     float: right !important;
 }
