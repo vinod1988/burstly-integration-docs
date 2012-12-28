@@ -1,5 +1,6 @@
 #Android Release Notes
 Current SDK Version: 1.17.0.30227
+
 ##3rd Party SDK Versions
 
     Millennial 4.6.0
@@ -11,7 +12,6 @@ Current SDK Version: 1.17.0.30227
     iVdopia 1.4.7
 
 ##1.17
-
 ###Manifest Changes
 None. 
 
