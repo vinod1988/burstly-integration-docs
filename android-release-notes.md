@@ -8,7 +8,6 @@ Current SDK Version: 1.17.0.30227
     Greystripe 2.0.1
     Admob 6.0.1
     Jumptap 2.1.11.1
-    Amazon 3.6.0
     iVdopia 1.4.7
 
 ##1.17
@@ -54,20 +53,10 @@ And Millenial's Activity tags should look like:
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
             android:configChanges="keyboardHidden|orientation|keyboard"/>
 
-Finally the Amazon SDK requires the manifest entry:
-
-        <!-- Amazon =================================================== -->
-        <activity
-            android:name="com.amazon.mobileads.mraid.MraidBrowser"
-            android:configChanges="keyboardHidden|orientation" />
-        <activity
-            android:name="com.amazon.mobileads.video.VideoActionHandler"
-            android:configChanges="keyboardHidden|orientation" />
-
 ###Public API Changes
 None.
+
 ###Updated Ad Networks
-New network Amazon A9 version 3.6.0 added  
 Medialets SDK removed  
 Greystripe 1.6.1-> 2.0  
 Inmobi 3.5.0 -> 3.5.3  
