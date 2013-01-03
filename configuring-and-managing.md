@@ -216,7 +216,7 @@ Burstly Rewards placements are generally divided into three categories:
 
 ###Customization
 
-The Burstly Rewards offering supports several customization options to allow you to make your rewards match the look and feel of your game in order to provide a better experience to your users which feels more tightly integrated with your title. [[View the full customization options documentation here|http://support.burstly.com/kb/rewards/burstly-rewards-design-guide-contents]].
+The Burstly Rewards offering supports several customization options to allow you to make your rewards match the look and feel of your game in order to provide a better experience to your users which feels more tightly integrated with your title. [[View the full customization options documentation here|http://support.burstly.com/customer/portal/articles/888713-burstly-rewards-design-guide-—-contents]].
 
 ###Configuring Rewards
 
@@ -255,4 +255,3 @@ If you have already integrated the Burstly SDK into your title then the code to 
 
 - [[iOS Guide]]  
 - [[Android Guide]]  
-
