@@ -4,11 +4,10 @@ Current SDK Version: 1.17.0.30227
 ##3rd Party SDK Versions
 
     Millennial 4.6.0
-    Inmobi 3.5.0b
+    Inmobi 3.5.3
     Greystripe 2.0.1
-    Admob 6.0.1
+    Admob 6.2.1
     Jumptap 2.1.11.1
-    iVdopia 1.4.7
 
 ##1.17
 ###Manifest Changes
