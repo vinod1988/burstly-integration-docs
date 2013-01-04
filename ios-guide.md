@@ -296,3 +296,63 @@ You can swap "kBurstlyTestAdmob" with one of the following enum values to test d
 ###Integration Mode Safe-Guard
 
 We recommend passing in an array of device MAC addresses (NSString) to the "setIntegrationModeWithTestNetwork:filterDeviceMacAddresses:" method. This will ensure that when deployed to a device, integration mode will only be enabled if the device MAC address is among those specified in the array. This should prevent anyone from accidentally deploying an app to the public that only serves test ads.  
+
+
+##Reward Currency Management  
+
+Burstly supports methods for managing currency earned through specialized ads called rewards. You can read about Burstly Rewards [here](configuring-and-managing#Rewards).  
+
+###Initializing the Currency Manager
+
+If dealing with currency in your app, you MUST initialize the currency manager by passing in required parameters.
+
+    // Initialize Burstly Currency.
+	self.currencyManager = [BurstlyCurrency sharedCurrencyManager];
+	[self.currencyManager setPublisherId:YOUR_APP_ID];
+	[self.currencyManager setDelegate:self];
+
+
+###Checking the Balance
+
+You can check the rewards balance by calling a method on the currency manager and implementing a callback method on the delegate that you specify in the initialization code.
+
+    // Get current rewards balance.
+	[self.currencyManager checkForUpdate];
+
+	- (void)currencyManager:(BurstlyCurrency *)manager didUpdateBalance:(NSInteger)newBalance
+    {
+    	// Burstly rewards balance has been updated.
+	    NSLog(@"Burstly currency updated: %d", newBalance);
+    }
+    
+    - (void)currencyManager:(BurstlyCurrency *)manager didFailToUpdateBalanceWithError:(NSError *)error
+    {
+    	// Burstly rewards balance failed to update.
+    }
+
+
+###When to Check for Reward Balance
+
+Typically, there are key points throughout the app lifecycle that you will need to check for the updated balance. We always recommend checking the balance inside Burstly's full-screen dismiss callback. This delegate method will be called every time a user returns to the app from a full-screen Burstly ad view. This will always happen after a user has completed a currency earning reward offer.
+
+If your app implements an offer wall or incentivized interstitials, you will want to check for the reward balance when those interstitials and offer walls dismiss from full-screen.
+
+    // This goes into the delegate that adheres to BurstlyInterstitialDelegate and is passed to the instance of BurstlyInterstitial
+    - (void)burstlyInterstitial:(BurstlyInterstitial *)ad willDismissFullScreen:(NSString*)adNetwork
+    {
+        // Get current reward balance.
+        // This is a good time to check the balance because it's likely that the user completed an offer within the interstitial.
+        [self.currencyManager checkForUpdate];
+    }
+
+
+If your app implements incentivized banners, you will want to check for the reward balance when the user returns to the app from the banners landing page.
+
+    // This goes into the delegate that adheres to BurstlyBannerDelegate and is passed to the instance of BurstlyBannerAdView
+    - (void)burstlyBannerAdView:(BurstlyBannerAdView *)view willDismissFullScreen:(NSString*)adNetwork
+    {
+        // Get current reward balance.
+        // This is a good time to check the balance because it's likely that the user completed an offer within the banner landing page.
+        [self.currencyManager checkForUpdate];
+    }
+
