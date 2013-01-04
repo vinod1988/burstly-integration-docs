@@ -300,7 +300,7 @@ We recommend passing in an array of device MAC addresses (NSString) to the "setI
 
 ##Reward Currency Management  
 
-Burstly supports methods for managing currency earned through specialized ads called rewards. You can read about Burstly Rewards here: [http://cldocs.burstly.com/configuring-and-managing](configuring-and-managing)  
+Burstly supports methods for managing currency earned through specialized ads called rewards. You can read about Burstly Rewards [here](http://cldocs.burstly.com/configuring-and-managing).  
 
 ###Initializing the Currency Manager
 
