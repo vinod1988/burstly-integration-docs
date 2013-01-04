@@ -300,7 +300,7 @@ We recommend passing in an array of device MAC addresses (NSString) to the "setI
 
 ##Reward Currency Management  
 
-Burstly supports methods for managing currency earned through specialized ads called rewards. You can read about Burstly Rewards [here](configuring-and-managing#Rewards).  
+Burstly supports methods for managing currency earned through specialized ads called rewards. You can read about Burstly Rewards here: [http://cldocs.burstly.com/configuring-and-managing](configuring-and-managing)  
 
 ###Initializing the Currency Manager
 
@@ -355,4 +355,3 @@ If your app implements incentivized banners, you will want to check for the rewa
         // This is a good time to check the balance because it's likely that the user completed an offer within the banner landing page.
         [self.currencyManager checkForUpdate];
     }
-
