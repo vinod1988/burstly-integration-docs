@@ -187,26 +187,26 @@ To show an interstitial you will need to create a new BurstlyInterstitial in the
 
 1. The BurstlyInterstitial constructor takes a reference to the Fragment or Activity that it's associated with, the Zone Id, and View name need to be filled in with the details from the zones you create in the burstly.com UI, and finally a boolean value which tells whether automatic precaching should be handled by the BurstlyInterstitial.
 	
-		mInterstitial = new BurstlyInterstitial(this, YOUR_ZONE_ID, YOUR_VIEW_NAME, USE_AUTOMATIC_CACHING);
+        mInterstitial = new BurstlyInterstitial(this, YOUR_ZONE_ID, YOUR_VIEW_NAME, USE_AUTOMATIC_CACHING);
+	
 2. Now that you have a reference to a BurstlyInterstitial you can use the showAd method to load and display an interstitial.
 	
 		mInterstitial.showAd();
 
-###Caching Interstitials
+##Caching Interstitials
 
-Caching of interstitials before they are needed allows for much shorter load times, and a much better user experience. However one downside of caching results when you pass custom targeting parameters using setTargetingParameters(). The values used passed in the request may not be known beforehand. For example if your app was a level based game, and you were passing the score back for targeting purposes, caching an ad at the start of the level would prevent sending the level score because the players score will not be known at the time that the ad is being cached.
+Caching of interstitials before they are needed allows for much shorter load times, and a much better user experience. However one downside of caching results when you pass custom targeting parameters using setTargetingParameters. The values used passed in the request may not be known beforehand. For example if your app was a level based game, and you were passing the score back for targeting purposes, caching an ad at the start of the level would prevent sending the level score because the players score will not be known at the time that the ad is being cached.
 
-The BurstlyInterstitial class provides an option to automatically manage the caching of interstitials for you. Whenever the Activity or Fragment it is associated with is shown the BurstlyInterstitial will cache an ad if an ad is not already cached and ready to show.  If you want a different caching behavior you can manually cache your ads.
+The BurstlyInterstitial class provides an option to automatically manage the caching of interstitials for you. Whenever the Activity or Fragment it is associated with is shown the BurstlyInterstitial will cache an ad if an ad is not already cached and ready to show. To use automatic caching just set the *USE_AUTOMATIC_CACHING* argument in the constructor to *true*.
 
-To automatically cache interstitials follow the following additional steps:
+You can use the hasCachedAd and showAd methods of the AutomaticCacheManager in order to verify that an ad has been cached, and show it.
 
-1. Create a new AutomaticCacheManager and store it in a member. The AutomaticCacheManager takes care of attempts/reattempts to cache an ad so that it is ready when it is time to be shown. The AutomaticCacheManager constructor requires a reference to the Activity/Fragment that the interstital is in and a reference to the BurstlyInterstitial which is being managed.
+	if(mInterstitialMgr.hasCachedAd())
+        mInterstitialMgr.showAd();
 
-		mInterstitialMgr = new AutomaticCacheManager(mInterstitial, this);
-2. Now that you have these members initialized you may use the hasCachedAd and showAd methods of the AutomaticCacheManager in order to verify that an ad has been cached, and show it.
+If you want a different caching behavior you can manually cache your ads using the cacheAd method.
 
-		if(mInterstitialMgr.hasCachedAd())
-		    mInterstitialMgr.showAd();
+    mInterstital.cacheAd();        
 
 ##Event Listeners
 
