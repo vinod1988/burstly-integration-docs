@@ -235,6 +235,18 @@ passing it the list of deviceIDs which should be placed in integration mode.  Al
 		Burstly.setIntegrationNetwork(BurstlyIntegrationModeAdNetworks.ADMOB);
 The network which is set will be used by all subsequent ad placements until the value is changed.  The available values are: *DISABLED, HOUSE, MILLENIAL, ADMOB, GREYSTRIPE, INMOBI, RICHMEDIA*.
 
+##Rewards Currency Management
+
+Initialization and display of rewards zones is handled in the same way that a banner or interstitial is displayed (for example, a zone containing an offer wall is instantiated as a BurstlyInterstitial), however you also need to manage the currency in your app to check the server for updates and add/subtract currency as needed. To do this you will use the Burstly CurrencyManager.
+
+###Burstly CurrencyManager
+
+The Burstly CurrencyManager is automatically initialized using your app ID in the Burstly.init method. To get a reference to the CurrencyManager call getCurrencyManager. It is recommended that you store a reference to this in the onCreate method after you have called Burstly.init.
+
+    mCurrencyManger = Burstly.getCurrencyManager();
+
+
+
 ##Open GL Based Applications
 
 The threading model for Open GL based Applications is slightly different from traditional View based applications. View based applications use a thread referred to as the main or UI thread which processes the message queue and must be used to interact with Android View objects (This is an Android requirement). Open GL based applications create a thread (Often referred to as the GL thread) for handling the application's update and render loop. As a result most of your app's logic will be run on the GL thread, but all calls to interact with your Burstly objects must be run from the UI thread. This can be accomplished by having a reference to your Android Activity and calling it's runOnUiThread method to interact with View objects on the UI thread. 
