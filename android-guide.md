@@ -64,7 +64,7 @@ If you wish to add either of these permissions please copy and paste the corresp
 
 A sample manifest with the required permissions can be viewed in any of our samples.
 
-##Initializing the system
+##Initializing the System
 Before using Burstly the system needs to be initialized. This should occur before:
 	
 - Any layouts containing a Banner are inflated
@@ -138,11 +138,11 @@ Example of manually passing Fragment events from Fragment methods:
 	    ...
 	}
 
-##Display a banner
+##Display a Banner
 
-Banners can be added and positioned using a layout file, or in code.
+Banners can be added and positioned using a layout file, or in code. 
 
-###Adding the banner using a layout file
+###Adding the Banner Using a Layout File
 
 In order to make full use of the layout file you will need to add the burstly schema (xmlns:burstly="http://burstly.com/lib/ui/schema") to your root ViewGroup.  For example:
 
@@ -168,7 +168,7 @@ This code should be added in your Activity's onCreate method after the call to s
 	final BurstlyBanner banner = new BurstlyBanner(this, R.id.bannerview);
 	banner.showAd();
 
-###Adding the banner in code
+###Adding the Banner in Code
 
 To create a new BurstlyBanner and add it to a ViewGroup in code you must first have a reference to the ViewGroup you are adding to and a reference to a ViewGroup.LayoutParameters which will be used to place the banner inside the ViewGroup (null can be used for the layoutParameters). 
 
@@ -176,6 +176,8 @@ The Zone Id, and View name need to be filled in with the details from the zones 
 
 	final BurstlyBanner banner = new BurstlyBanner( this, viewGroup, layoutParams, YOUR_ZONE_ID, YOUR_VIEW_NAME, 30);
 	banner.showAd();
+
+Once you call showAd to display a banner it will automatically refresh at the rate specified on the server or in your code, and you **do not need to call showAd to refresh the banner.**
 
 ##Interstitials
 
@@ -233,6 +235,6 @@ passing it the list of deviceIDs which should be placed in integration mode.  Al
 		Burstly.setIntegrationNetwork(BurstlyIntegrationModeAdNetworks.ADMOB);
 The network which is set will be used by all subsequent ad placements until the value is changed.  The available values are: *DISABLED, HOUSE, MILLENIAL, ADMOB, GREYSTRIPE, INMOBI, RICHMEDIA*.
 
-##Open GL based applications
+##Open GL Based Applications
 
 The threading model for Open GL based Applications is slightly different from traditional View based applications. View based applications use a thread referred to as the main or UI thread which processes the message queue and must be used to interact with Android View objects (This is an Android requirement). Open GL based applications create a thread (Often referred to as the GL thread) for handling the application's update and render loop. As a result most of your app's logic will be run on the GL thread, but all calls to interact with your Burstly objects must be run from the UI thread. This can be accomplished by having a reference to your Android Activity and calling it's runOnUiThread method to interact with View objects on the UI thread. 
