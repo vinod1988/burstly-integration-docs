@@ -17,6 +17,7 @@ body {
 {
     float: right !important;
     clear: none !important;
+    margin-bottom: 10px !important;
 }
 
 #wiki-body h1
@@ -24,6 +25,7 @@ body {
     margin-bottom: 10px;
 }
 
+<<<<<<< HEAD
 #wiki-body p {
     max-width: 580px;
     font-size: 14px !important;
@@ -76,6 +78,13 @@ ol ol li {
 
 /* SIDEBAR */
 
+=======
+#wiki-body ul li {
+    margin-top: -.6em !important;
+}
+
+/* Note that "rightbar" is now positioned on the left*/
+>>>>>>> master
 #wiki-rightbar
 {
     float: left !important;
@@ -161,6 +170,7 @@ ol ol li {
 
 #wiki-rightbar li.current a
 {
+<<<<<<< HEAD
 	/*color: #fff !important;*/
     /*background: #D75234;*/
     color: #2464A0;
@@ -213,3 +223,13 @@ ol.linenums { margin: 0 0 0 40px; } /* IE indents via margin-left */
 ol.linenums li { color: rgba(0,0,0,.15); line-height: 20px; }
 /* Alternate shading for lines */
 li.L1, li.L3, li.L5, li.L7, li.L9 {  }
+=======
+	color: #ffffff !important;
+}
+
+.has-rightbar #wiki-footer {
+    width: 68%;
+    margin-right: 3%;
+    float: right !important;
+}
+>>>>>>> master

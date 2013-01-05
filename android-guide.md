@@ -7,7 +7,7 @@ Burstly allows you to integrate a single SDK into your app, and serve ads from m
 
 ##SDK Integration
 
-Integrating the Burstly SDK into your application is as easy as adding the Burstly_X.X.X.Xcl.jar, and android-support-v4.jar to you projects libs directory.  Once the jar files have been added you may need to add a dependency to your project depending on your build environment. Next you will need to add the source files from the burstlyconveniencelayer_src directory to your project as an additional source directory.
+Integrating the Burstly SDK into your application is as easy as adding the Burstly_X.X.X.X.jar, and android-support-v4.jar to you projects libs directory.  Once the jar files have been added you may need to add a dependency to your project depending on your build environment. Next you will need to add the source files from the burstlyconveniencelayer_src directory to your project as an additional source directory.
 
 ##The Manifest
 

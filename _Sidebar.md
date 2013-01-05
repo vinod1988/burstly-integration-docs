@@ -2,4 +2,5 @@
 [[iOS Guide]]
 [[iOS Release Notes]]
 [[Android Guide]]
+[[Android Release Notes]]
 [[Configuring and Managing]]
