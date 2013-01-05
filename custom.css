@@ -78,7 +78,7 @@ ol ol li {
 /* SIDEBAR */
 
 #wiki-body ul li {
-    margin: 10px 0;
+    margin-top: -.6em !important;
 }
 
 /* Note that "rightbar" is now positioned on the left*/
