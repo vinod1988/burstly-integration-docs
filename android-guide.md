@@ -245,7 +245,52 @@ The Burstly CurrencyManager is automatically initialized using your app ID in th
 
     mCurrencyManger = Burstly.getCurrencyManager();
 
+###ICurrencyListener
 
+To receive notifications of Currency Manager events we will use the ICurrencyListener interface. We will add this in the activity's onResume method with a matching call to remove the ICurrencyListener in the onPause method (Note: You may choose to never remove this listener, and if that is the decision you make you will want to add this listener in the onCreate method). 
+
+    @Override
+    public void onPause() {
+        mCurrencyMan.removeCurrencyListener(this); 
+        ...
+        super.onPause();
+    }
+    @Override
+    public void onResume() {
+        mCurrencyMan.addCurrencyListener(this); 
+        checkForUpdatedBalance();
+        ...
+        super.onResume(); 
+    }
+
+In addition to adding our listener we will update the balance when the activity is resumed.
+
+	private void checkForUpdatedBalance() { 
+	    try {
+	        mCurrencyManager.checkForUpdate(); 
+	    	...
+	}
+	
+This method will check for an updated balance asynchronously and you will receive notification of success or failure in the ICurrencyListener methods which you have overridden. didUpdateBalance and didFailToUpdateBalance are called on the completion of an attempt to update your balance. This may be triggered by a call to CurrencyManager.checkForUpdate or potentially triggered internally by the system (So you may receive update or failure to update events without having called checkForUpdate). The currency manager callbacks will be made on an internal thread not the thread that requested the update. CurrencyManager.checkForUpdate will cache the latest known balance from the server, so this method even works offline.
+
+	public void didUpdateBalance(final BalanceUpdateEvent e) { 
+	    setBalance(e.getNewBalance());
+	}
+	public void didFailToUpdateBalance(final BalanceUpdateEvent e) {
+	    setBalance(e.getOldBalance()); 
+	}
+	private void setBalance(final int currentBalance) { 
+	    runOnUiThread(new Runnable() {
+	        public void run() {
+	            mCurrencyStr.setText("Currency: "+currentBalance); 
+	            mSubtractButton.setEnabled(currentBalance >= 10);
+	        }
+	    });
+	}
+
+To manually add or remove currency, use CurrencyManager.increaseBalance(int amount) and CurrencyManager.decreaseBalance(int amount).
+
+Both methods return the account balance as a result of the requested transaction. These methods are designed to work offline. If you never call these two methods, then CurrencyManager will always simply provide the total amount of currency awarded through Burstly Rewards. Note that decreaseBalance will allow the account balance to drop below 0. You must use your own logic to prevent users from buying items they can’t afford.
 
 ##Open GL Based Applications
 
