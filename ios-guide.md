@@ -76,7 +76,7 @@ Creating a banner ad placement entails setting up an instance of the BurstlyBann
 1. Import "BurstlyBannerAdView.h" and "BurstlyBannerAdViewDelegate.h"
 
         #import "BurstlyBannerAdView.h"
-        #import "BurstlyInterstitial.h"
+        #import "BurstlyBannerViewDelegate.h"
 
 2. Declare an instance of BurstlyBannerAdView in your View Controller
 
