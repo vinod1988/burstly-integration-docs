@@ -292,6 +292,14 @@ To manually add or remove currency, use CurrencyManager.increaseBalance(int amou
 
 Both methods return the account balance as a result of the requested transaction. These methods are designed to work offline. If you never call these two methods, then CurrencyManager will always simply provide the total amount of currency awarded through Burstly Rewards. Note that decreaseBalance will allow the account balance to drop below 0. You must use your own logic to prevent users from buying items they can’t afford.
 
+###Testing Rewards
+
+To test rewards you can use the *REWARDS_SAMPLE* enum in BurstlyIntegrationModeAdNetworks. The featured offer in this enum will continue to serve even after you have converted the offer to allow for testing. Note that **you must use the correct app ID when you call Burstly.init** in order for your app to reward correctly.
+
+    Burstly.init(this, BurstlyIntegrationModeAdNetworks.getAppId);
+    Burstly.setIntegrationNetwork(BurstlyIntegrationModeAdNetworks.REWARDS_SAMPLE);
+    Burstly.enableIntegrationMode(null);
+
 ##Open GL Based Applications
 
 The threading model for Open GL based Applications is slightly different from traditional View based applications. View based applications use a thread referred to as the main or UI thread which processes the message queue and must be used to interact with Android View objects (This is an Android requirement). Open GL based applications create a thread (Often referred to as the GL thread) for handling the application's update and render loop. As a result most of your app's logic will be run on the GL thread, but all calls to interact with your Burstly objects must be run from the UI thread. This can be accomplished by having a reference to your Android Activity and calling it's runOnUiThread method to interact with View objects on the UI thread. 
