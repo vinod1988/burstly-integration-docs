@@ -251,13 +251,13 @@ To receive notifications of Currency Manager events we will use the ICurrencyLis
 
     @Override
     public void onPause() {
-        mCurrencyMan.removeCurrencyListener(this); 
+        mCurrencyManager.removeCurrencyListener(this); 
         ...
         super.onPause();
     }
     @Override
     public void onResume() {
-        mCurrencyMan.addCurrencyListener(this); 
+        mCurrencyManager.addCurrencyListener(this); 
         checkForUpdatedBalance();
         ...
         super.onResume(); 
