@@ -1,29 +1,16 @@
 body {
   margin: 0px;
-  padding: 0px;
+  padding: 0 20px;
 }
 
-#head
-{
-    position: relative;
-}
+#head           { position: relative; }
+#head #logo     { float: left; margin-right: 10px; }
+#head h1        { margin-top: 20px; bottom: 0px; }
+#head .actions  { margin-top: 26px; bottom: 0px; }
 
-#head #logo
-{
-    float: left;
-    margin-right: 10px;
-}
-
-#head h1
-{
-    margin-top: 20px;
-    bottom: 0px;
-}
-
-#head .actions
-{
-    margin-top: 26px;
-    bottom: 0px;
+#wiki-wrapper {
+    width: 100%;
+    min-width: 800px;
 }
 
 #wiki-body
@@ -38,6 +25,58 @@ body {
     margin-bottom: 10px;
 }
 
+#wiki-body p {
+    max-width: 580px;
+    font-size: 14px !important;
+    line-height: 23px !important;
+}
+
+ol ol { padding-bottom: 5px; }
+
+ol ol li {
+    /*font-weight: normal;*/
+    line-height: 1.2em; 
+}
+
+.markdown-body > ol {
+    counter-reset:li; /* Initiate a counter */
+    margin-left:0; /* Remove the default left margin */
+    padding-left:0; /* Remove the default left padding */
+}
+.markdown-body > ol > li {
+    position: relative;
+    margin: 0 0 6px 2.5em; /* Give each list item a left margin to make room for the numbers */
+    padding: 3px 8px 4px; /* Add some spacing around the content */
+    list-style:none; /* Disable the normal item numbering */
+    /*font-weight: bold;*/
+    /*border-top: 1px solid #aaa;*/
+    /*background:#f6f6f6;*/
+}
+.markdown-body > ol > li:before {
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    top: -1px;
+    left: -2.5em;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 2em;
+    height: 2em;
+    line-height: 1.4em;
+    margin-right: 15px;
+    padding: 4px;
+    border-radius: 40px;
+    /*border-top: 1px solid #aaa;*/
+    color: #fff;
+    background: #D75234;
+    font-weight: bold;
+    font-family:"Helvetica Neue", Arial, sans-serif;
+    text-align: center;
+}
+
+/* SIDEBAR */
+
 #wiki-body ul li {
     margin-top: -.6em !important;
 }
@@ -46,9 +85,11 @@ body {
 #wiki-rightbar
 {
     float: left !important;
-    padding: 7px 0px !important;
+    padding: 7px 0 7px 20px !important;
     margin-bottom: 10px;
-    overflow: scroll;
+    overflow: hidden;
+    background: none;
+    border: none;
 }
 
 #wiki-rightbar.fixed
@@ -57,43 +98,128 @@ body {
     top: 10px !important;
 }
 
+#wiki-rightbar a.scrolltop {
+    display: none;
+    cursor: pointer;
+    color: #999;
+    padding: 10px 0;
+}
+
+#wiki-rightbar.fixed a.scrolltop {
+    display: block;
+}
+
+#wiki-rightbar a:hover {
+    text-decoration: none;
+}
+
 #wiki-rightbar a.section
 {
 	display: block;
-    font-size: 18px;
-    padding: 0px 7px;
+    font-size: 1.1em;
+    letter-spacing: 0.05em;
+    line-height: 2.2em;
+    /*padding: 0px 1em;*/
+    color: #333;
+    font-weight: bold;
 }
 
 #wiki-rightbar a.current
 {
-    background: #444444;
-    color: #ffffff;
+    color: #D75234;
+    background: none !important;
+    /*border-bottom: 2px solid #D75234;*/
 }
 
 #wiki-rightbar ul
 {
 	background: #ffffff;
-	margin: 0px;
+	margin: 0 0 15px;
 	padding: 0px;
+    list-style: none;
 }
 
 #wiki-rightbar li
 {
-	font-size: 14px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    -webkit-transition: all 0.2s linear;
+}
+
+#wiki-rightbar li a {
+    display: block;
+    font-size: 13px !important;
     margin: 2px 0px 2px 0px;
     list-style-type: none;
-    padding: 0px 0px 0px 17px;
+    padding: 3px 0px 3px 17px;
+    line-height: 1.5em;
+    -webkit-transition: padding 0.2s linear;
+}
+
+#wiki-rightbar li a:hover {
+    background: #f4f4f4;
 }
 
 #wiki-rightbar li.current
 {
-	background: #999999 !important;
+	/*background: #aaa !important;*/
 }
 
 #wiki-rightbar li.current a
 {
-	color: #ffffff !important;
+	/*color: #fff !important;*/
+    /*background: #D75234;*/
+    color: #2464A0;
+    padding-left: 25px;
+    font-weight: bold;
+    /*text-decoration: underline;*/
 }
+
+/* Search */
+#searchbar-fauxtext input {
+    width: 150px;
+    -webkit-transition: width 0.2s ease-out;
+}
+
+#searchbar-fauxtext input:focus {
+    width: 300px;
+    outline: none;
+}
+
+
+
+
+/* Prettify */
+
+.com { color: #93a1a1 !important; }
+.lit { color: #195f91 !important; }
+.pun, .opn, .clo { color: #93a1a1 !important; }
+.fun { color: #dc322f !important; }
+.str, .atv { color: #268bd2 !important; }
+.kwd, .tag { color: #195f91 !important; }
+.typ, .atn, .dec, .var { color: #CB4B16 !important; }
+.pln { color: #93a1a1 !important; }
+.markdown-body pre.prettyprint {
+  background: #fefbf3;
+  padding: 9px;
+  border: 1px solid #E6E4E1;
+  border-radius: 0;
+  /*-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.1);*/
+  /*-moz-box-shadow: 0 1px 2px rgba(0,0,0,.1);*/
+  /*box-shadow: 0 1px 2px rgba(0,0,0,.1);*/
+  /*-webkit-transition: width 0.3s ease-out;*/
+}
+
+pre.prettyprint.expanded {
+    /*width: 800px;*/
+}
+
+/* Specify class=linenums on a pre to get line numbering */
+ol.linenums { margin: 0 0 0 40px; } /* IE indents via margin-left */
+ol.linenums li { color: rgba(0,0,0,.15); line-height: 20px; }
+/* Alternate shading for lines */
+li.L1, li.L3, li.L5, li.L7, li.L9 {  }
+
 
 .has-rightbar #wiki-footer {
     width: 68%;
