@@ -133,10 +133,12 @@ $(window).load(function () {
 
     		// Remove "current" class from all sub section links.
 			$(_wikiNavBar).find('li').each(function() {
-				$(this).removeClass('current');
-			});
-			// Add "current" class to corresponding sub section link.
-			_wikiNavBar.find('li:contains(\''+subSectionName+'\')').addClass('current');
+                $(this).removeClass('current');
+                if ($(this).text() == subSectionName)
+                {
+                    $(this).addClass('current');
+                }
+            });
     	}
 	}
 
