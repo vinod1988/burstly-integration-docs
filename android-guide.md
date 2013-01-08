@@ -296,7 +296,7 @@ Both methods return the account balance as a result of the requested transaction
 
 To test rewards you can use the *REWARDS_SAMPLE* enum in BurstlyIntegrationModeAdNetworks. The featured offer in this enum will continue to serve even after you have converted the offer to allow for testing. Note that **you must use the correct app ID when you call Burstly.init** in order for your app to reward correctly.
 
-    Burstly.init(this, BurstlyIntegrationModeAdNetworks.getAppId);
+    Burstly.init(this, BurstlyIntegrationModeAdNetworks.getAppId());
     Burstly.setIntegrationNetwork(BurstlyIntegrationModeAdNetworks.REWARDS_SAMPLE);
     Burstly.enableIntegrationMode(null);
 
