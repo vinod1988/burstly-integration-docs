@@ -14,9 +14,7 @@
 * MD5 Checksum: cd6c09ff8f9c72a19d0c3dced4b31b3a
 
 ##Burstly Android SDK
-- [[Burstly Android SDK|https://s3.amazonaws.com/sdk.burstly.com/builds/android/convenience_layer/generic/BurstlySDK_Android_CL.zip]]
-* Version
-* Configuration
-* Size Footprint (?)
-* Memory Footprint(?)
-* MD5 Checksum
+- [[Download v.1.18.0.2212|https://s3.amazonaws.com/sdk.burstly.com/builds/android/convenience_layer/generic/BurstlySDK_Android_CL.zip]]
+* Mediated Networks: Burstly
+* Memory Footprint(?) : ~6MB
+* MD5 Checksum: 2f44a48a9f5b4f1dff36b63fc2115f40
