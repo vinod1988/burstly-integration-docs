@@ -1,7 +1,7 @@
 #Downloads
 
 ##Burstly iOS SDK
-- [[Burstly iOS SDK|https://s3.amazonaws.com/sdk.burstly.com/builds/ios/convenience_layer/generic/BurstlySDK_iOS_CL.zip]]
+- [[Download|https://s3.amazonaws.com/sdk.burstly.com/builds/ios/convenience_layer/generic/BurstlySDK_iOS_CL.zip]]
 * Version: 1.36.0.3555
 * Mediated Networks: Burstly 
 * Memory Footprint(?) : ~4MB (peak live byte usage)
