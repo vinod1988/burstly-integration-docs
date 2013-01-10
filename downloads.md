@@ -21,8 +21,8 @@
 * MD5 Checksum: 2f44a48a9f5b4f1dff36b63fc2115f40
 * Important: MRAID 2.0 is now available on 1.18. [[Visit Release Notes for more info| http://cldocs.burstly.com/ios-release-notes#1.35]] 
 
-##Burstly Android SDK
-- [[Download v.1.18.0.2212|https://s3.amazonaws.com/sdk.burstly.com/builds/android/convenience_layer/generic/BurstlySDK_Android_CL.zip]]
+##Burstly Android SDK (with 3rd party ad networks)
+- [[Download v.1.18.0.2212 with networks|https://s3.amazonaws.com/sdk.burstly.com/builds/android/convenience_layer/generic/BurstlySDK_Android_CL.zip]]
 * Mediated Networks: Burstly, Greystripe, Admob, Millennial, Jumptap, Inmobi
 * Memory Footprint(?) : ~6MB
 * MD5 Checksum: 99c3a849f6e9a0d143f057433c7f4d84
