@@ -28,4 +28,4 @@
 * Important: MRAID 2.0 is now available on 1.18. [[Visit Release Notes for more info| http://cldocs.burstly.com/ios-release-notes#1.35]] 
 
 ##Burstly Android SDK (Enterprise and Custom Builds)
-* [Click here|http://test.com] to request an enterprise build.
+* [[Click here|http://test.com]] to request an enterprise build.
