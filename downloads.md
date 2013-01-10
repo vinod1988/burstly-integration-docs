@@ -17,6 +17,13 @@
 ##Burstly Android SDK
 - [[Download v.1.18.0.2212|https://s3.amazonaws.com/sdk.burstly.com/builds/android/convenience_layer/generic/BurstlySDK_Android_CL.zip]]
 * Mediated Networks: Burstly
-* Memory Footprint(?) : ~6MB
+* Memory Footprint(?) : ~3MB
 * MD5 Checksum: 2f44a48a9f5b4f1dff36b63fc2115f40
+* Important: MRAID 2.0 is now available on 1.18. [[Visit Release Notes for more info| http://cldocs.burstly.com/ios-release-notes#1.35]] 
+
+##Burstly Android SDK
+- [[Download v.1.18.0.2212|https://s3.amazonaws.com/sdk.burstly.com/builds/android/convenience_layer/generic/BurstlySDK_Android_CL.zip]]
+* Mediated Networks: Burstly, Greystripe, Admob, Millennial, Jumptap, Inmobi
+* Memory Footprint(?) : ~6MB
+* MD5 Checksum: 99c3a849f6e9a0d143f057433c7f4d84
 * Important: MRAID 2.0 is now available on 1.18. [[Visit Release Notes for more info| http://cldocs.burstly.com/ios-release-notes#1.35]] 
