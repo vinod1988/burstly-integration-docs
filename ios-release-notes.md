@@ -1,19 +1,49 @@
 #iOS Release Notes
 
-Current SDK Version: 1.35.0.30428
+Current SDK Version: 1.36.0.32293
 
 Important: 
-Please set Base SDK to iOS 6.0 and Deployment Target to whatever your lowest support OS version is (4.3+ recommended).
+Please set Base SDK to iOS 6.0 and Deployment target to whatever your lower support OS version is (4.3+ recommended). 
 
 ##3rd Party SDK Versions
 
 	Admob - Version: 6.2.1
 	Flurry Link - Version: 3.1.2
-	Greystripe - Version: 3.2.1
+	Greystripe - Version: 4.0
 	iAD - N/A
 	InMobi -  Version: 3.6.3
 	JumpTap - Version: 2.0.16.0
 	Millennial Media - Version: 4.6.1
+
+##1.36
+
+1.36.0.32293 - The following bugs & features were resolved:
+- Added possibility to pass CLLocationManager via UserInfo
+- Added possibility to show interstitials with transparent background
+- Added support for multiple currencies
+- Added support for alert-based interstitials
+- Added possibility to switch users in BurstlyCurrency
+- Updated InMobi SDK to version 3.6.3
+- Updated AdMob SDK to version 6.2.1
+- Updated Greystripe SDK to version 4.0
+- Fixed missing 'has dismissed fullscreen' callback for banners as interstitial
+- Fixed video creatives to use app audio session
+- Fixed mraid.useCustomClose()
+- Fixed mraid.expand() firing error event in the expanded state
+- Fixed mraid.expand(url) preventing to use maid.expand() in the future
+- Fixed mraid.getExpandProperties() returning incorrect width/height when default settings are used
+- Fixed MRAID custom close button not being displayed in landscape mode
+- Fixed MRAID ad being not in the expanded state after expand(url)
+- Fixed MRAID banner not working correctly in expanded state (external URL)
+- Fixed a few callback issues for MRAID ads
+- Fixed mraid.close() affecting several ads at the same time
+- Fixed two 'Close' buttons displayed from time to time in the MRAID ads
+- Fixed an issue when expanded width/heigth is greater than the screen size
+- Fixed an issue preventing ad rotation after expiration of a cached ad
+- Fixed an issue preventing ad rotation after two precacheAd calls
+- Fixed occasionally missing 'has dismissed fullscreen' callback for iAd ads
+- Removed GSAdEngine specific initialization methods
+- Increased close control for expanded or interstitial MRAID ads to 50x50 of clickable area
 
 ##1.35
 
