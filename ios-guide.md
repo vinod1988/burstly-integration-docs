@@ -325,7 +325,7 @@ You can check the rewards balance by calling a method on the currency manager an
         // Returns a dictionary of currency info keyed by a currency type string.
         BurstlyCurrencyUpdateInfo *currencyUpdate = [balances objectForKey:MyCurrencyType];
         NSInteger newBalance = [currencyUpdate newTotal];
-	NSLog(@"Burstly currency updated: %d", newBalance);
+        NSLog(@"Burstly currency updated: %d", newBalance);
     }
     
     - (void)currencyManager:(BurstlyCurrency *)manager didFailToUpdateBalanceWithError:(NSError *)error
