@@ -1,5 +1,4 @@
 [[Overview|Home]]
-[[Downloads]]
 [[iOS Guide]]
 [[iOS Release Notes]]
 [[Android Guide]]
