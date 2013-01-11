@@ -13,7 +13,7 @@
 * Important: Greystripe SDK updated to 4.6. [[Visit Release Notes for more info| http://cldocs.burstly.com/ios-release-notes#1.35]] 
 
 ##Burstly iOS SDK (Enterprise and Custom Builds)
-* [Click here](http://test.com) to request an enterprise build.
+* [Click here](https://docs.google.com/a/burstly.com/spreadsheet/viewform?formkey=dDRTZXAxSDJ4YW9PV1RNcTc5VDRPWnc6MQ) to request an enterprise build.
 
 ##Burstly Android SDK
 - [[Download v.1.18.0.2212|https://s3.amazonaws.com/sdk.burstly.com/builds/android/convenience_layer/generic/BurstlySDK_Android_CL.zip]]
@@ -28,4 +28,4 @@
 * Important: MRAID 2.0 is now available on 1.18. [[Visit Release Notes for more info| http://cldocs.burstly.com/ios-release-notes#1.35]] 
 
 ##Burstly Android SDK (Enterprise and Custom Builds)
-* [Click here](http://test.com) to request an enterprise build.
+* [Click here](https://docs.google.com/a/burstly.com/spreadsheet/viewform?formkey=dDRTZXAxSDJ4YW9PV1RNcTc5VDRPWnc6MQ) to request an enterprise build.
