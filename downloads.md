@@ -3,12 +3,12 @@
 ##Burstly iOS SDK
 * [[Download v. 1.36.0.32293|http://sdk.burstly.com/builds/ios/convenience_layer/burstly_only/BurstlySDK_iOS_CL_BurstlyOnly.zip]]
 * Mediated Networks: Burstly, [Server-Side Partners](https://www.burstly.com/home/networksupport)
-* **Important**: Starting from 1.36, you MUST update your base SDK to v.4.0 in Xcode. [[Visit Release Notes for more info| http://cldocs.burstly.com/ios-release-notes]] 
+* **Important**: The Currency Manager API has been updated to support multiple currencies. [[Visit Release Notes for more info| http://cldocs.burstly.com/ios-release-notes]] 
 
 ##Burstly iOS SDK (with 3rd party ad networks)
 * [[Download v. 1.36.0.32293 with networks|https://sdk.burstly.com/builds/ios/convenience_layer/generic/BurstlySDK_iOS_CL.zip]]
 * Mediated Networks: Burstly, Admob, Millennial, Jumptap, Inmobi, Greystripe, [Server-Side Partners](https://www.burstly.com/home/networksupport)
-* Important: Greystripe SDK updated to 4.6. [[Visit Release Notes for more info| http://cldocs.burstly.com/ios-release-notes]] 
+* Important: The Currency Manager API has been updated to support multiple currencies. Updated the Greystripe SDK to v.4.0. [[Visit Release Notes for more info| http://cldocs.burstly.com/ios-release-notes]] 
 
 ##Burstly iOS SDK (Enterprise and Custom Builds)
 * [Click here](https://docs.google.com/a/burstly.com/spreadsheet/viewform?formkey=dDRTZXAxSDJ4YW9PV1RNcTc5VDRPWnc6MQ) to request an enterprise build.
