@@ -1,6 +1,6 @@
 #iOS Release Notes
 
-Current SDK Version: 1.36.0.32293
+Current SDK Version: 1.36.0.32423
 
 Important: 
 Please set Base SDK to iOS 6.0 and Deployment target to whatever your lower support OS version is (4.3+ recommended). 
@@ -16,6 +16,9 @@ Please set Base SDK to iOS 6.0 and Deployment target to whatever your lower supp
 	Millennial Media - Version: 4.6.1
 
 ##1.36
+
+1.36.0.32423 - The following bugs & features were resolved:
+- Added documentation to BurstlyCurrency.h
 
 1.36.0.32293 - The following bugs & features were resolved:
 - Added possibility to pass CLLocationManager via UserInfo
