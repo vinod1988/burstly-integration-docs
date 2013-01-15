@@ -70,7 +70,7 @@ The Burstly SDK is a static library that consists of methods that you can invoke
 
 
 ##Display a Banner
-Note: [Configure a banner zone](http://cldocs.burstly.com:8080/configuring-and-managing#Creating-a-Zone) on the Burstly dashboard to receive your zone id.
+Note: [Configure a banner zone](http://cldocs.burstly.com:8080/configuring-and-managing#Creating-a-Zone) on the Burstly dashboard to receive your unique zone id.
 
 Creating a banner ad placement entails setting up an instance of the BurstlyBannerAdView and adding it to a UIViewController's view hierarchy
 
@@ -161,6 +161,8 @@ Sent when the ad request has failed. Typically this would occur when either Burs
 
 
 ##Display an Interstitial
+
+Note: [Configure an interstitial zone](http://cldocs.burstly.com:8080/configuring-and-managing#Creating-a-Zone) on the Burstly dashboard to receive your unique zone id.
 
 Interstitial ad placements differ from their banner counterparts in that they typically provide a full screen interactive experience. These are usually presented modally and take over the app experience while providing a way to return to the application. You have the capability of running static ads, videos and rich media creatives in your application by following the steps detailed below.
 
