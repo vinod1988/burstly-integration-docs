@@ -1,13 +1,43 @@
 #Android Release Notes
-Current SDK Version: 1.17.0.30227
+Current SDK Version:  1.18.0.32451
 
 ##3rd Party SDK Versions
 
     Millennial 4.6.0
-    Inmobi 3.5.3
+    Inmobi 3.6.0
     Greystripe 2.0.1
     Admob 6.2.1
     Jumptap 2.1.11.1
+
+Changes in version 1.18.0.32451
+
+** Bug
+    * [ASDK-933] - CurrencyManager doesn't work since 1.18.0.31973
+
+Changes in version 1.18.0.31973
+
+##1.18
+###Manifest Changes
+None.
+
+###Public API Changes
+Added support for multiple currencies on SDK level. These changes affect ICurrencyListener callabacks.
+
+###Additional Notable Changes
+** Bug **
+
+    - [ASDK-813] - There are no callbacks 'PresentFullScreen and DismissFullScreen' after clicked House/Direct text with destination type 'video' and 'website'
+    - [ASDK-834] - There are no callbacks 'adNetworkPresentFullScreen/adNetworkDismissFullScreen' for Ormma ad
+    - [ASDK-840] - There is no callback 'adNetworkDismissFullScreen' for Inmobi Interstitial
+    - [ASDK-869] - There is no onHide() callback in Show Precached flow for ORMMA and MRAID
+    - [ASDK-881] - There are no Present and Dismiss callbacks for Millennial and InMobi
+    - [ASDK-890] - Ormma interstitial incorrectly displayed after rotation
+
+** New Feature **
+
+    - [ASDK-764] - Implement MRAID 2.0
+    - [ASDK-678] - Don't show visit site button if no click link is provided
+    - [ASDK-786] - InMobi Android Jelly Bean SDK Update
 
 ##1.17
 ###Manifest Changes
