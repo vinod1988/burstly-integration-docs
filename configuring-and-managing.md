@@ -71,7 +71,7 @@ Zones are physical locations within the app where ads are trafficked and present
 
 3. Choose ad type
     - 3rd Party SDK  
-    3rd Party SDK providers are those partners that have been included in your Burstly SDK. These providers are unique in that their libraries are actually in your app and so all unique functionality to their SDK remains intact when running via Burstly.
+    3rd Party SDK providers are those partners that have been included in your Burstly SDK. These providers are unique in that their libraries are actually in your app and so all unique functionality to their SDK remains intact when running via Burstly.  For more information regarding setting up 3rd Party SDK creatives in Burstly, visit - http://support.burstly.com/customer/portal/articles/888742-setting-up-third-party-ad-networks-sdk-partners-
     - Feed  
     Server side feed providers are those partners where Burstly establishes a connection between servers in order to receive ads. The advantage to server side partners is that they do not add any weight to the Burstly SDK and can be accessed without having to submit an app update. These demand providers range from performance based an networks, to regional partners, to those specializing in video/rich media.
         - Container Size  

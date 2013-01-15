@@ -273,12 +273,30 @@ In addition to adding our listener we will update the balance when the activity 
 	
 This method will check for an updated balance asynchronously and you will receive notification of success or failure in the ICurrencyListener methods which you have overridden. didUpdateBalance and didFailToUpdateBalance are called on the completion of an attempt to update your balance. This may be triggered by a call to CurrencyManager.checkForUpdate or potentially triggered internally by the system (So you may receive update or failure to update events without having called checkForUpdate). The currency manager callbacks will be made on an internal thread not the thread that requested the update. CurrencyManager.checkForUpdate will cache the latest known balance from the server, so this method even works offline.
 
-	public void didUpdateBalance(final BalanceUpdateEvent e) { 
-	    setBalance(e.getNewBalance());
-	}
-	public void didFailToUpdateBalance(final BalanceUpdateEvent e) {
-	    setBalance(e.getOldBalance()); 
-	}
+**Note that currency callbacks have changed as of 1.18 to support multiple currency.**
+
+    /**
+     * Received update balance event (This will happen on a background thread)
+     *
+     * @param balanceUpdateMap contains a map keyed on currency type. Use get(CURRENCY_TYPE) to access balanceUpdateInfo
+     *                         for your currency type
+     */
+    @Override
+    public void didUpdateBalance(final Map<String, BalanceUpdateInfo> balanceUpdateMap) {
+        setBalance(balanceUpdateMap.get(CURRENCY_TYPE).getNewTotal());
+    }
+
+    /**
+     * Failed to update balance (This will happen on a background thread)
+     *
+     * @param balanceUpdateMap contains a map keyed on currency type. Use get(CURRENCY_TYPE) to access balanceUpdateInfo
+     *                         for your currency type
+     */
+    @Override
+    public void didFailToUpdateBalance(final Map<String, BalanceUpdateInfo> balanceUpdateMap) {
+        setBalance(balanceUpdateMap.get(CURRENCY_TYPE).getOldTotal());
+    }
+
 	private void setBalance(final int currentBalance) { 
 	    runOnUiThread(new Runnable() {
 	        public void run() {
