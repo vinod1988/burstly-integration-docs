@@ -70,6 +70,7 @@ The Burstly SDK is a static library that consists of methods that you can invoke
 
 
 ##Display a Banner
+Note: [Configure a banner zone](http://cldocs.burstly.com:8080/configuring-and-managing#Creating-a-Zone) on the Burstly dashboard to receive your zone id.
 
 Creating a banner ad placement entails setting up an instance of the BurstlyBannerAdView and adding it to a UIViewController's view hierarchy
 
