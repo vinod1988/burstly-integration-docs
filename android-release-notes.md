@@ -16,6 +16,9 @@ None.
 ###Public API Changes
 Added support for multiple currencies on SDK level. These changes affect ICurrencyListener callabacks.
 
+###Updated Ad Networks
+InMobi 3.5.3 -> 3.6.0
+
 ###Additional Notable Changes
 - [ASDK-813] - There are no callbacks 'PresentFullScreen and DismissFullScreen' after clicked House/Direct text with destination type 'video' and 'website'
 - [ASDK-834] - There are no callbacks 'adNetworkPresentFullScreen/adNetworkDismissFullScreen' for Ormma ad
