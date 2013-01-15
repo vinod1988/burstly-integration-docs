@@ -306,7 +306,11 @@ This method will check for an updated balance asynchronously and you will receiv
 	    });
 	}
 
-To manually add or remove currency, use CurrencyManager.increaseBalance(int amount) and CurrencyManager.decreaseBalance(int amount).
+To manually add or remove currency, use CurrencyManager.increaseBalance(int amount, String currency) and CurrencyManager.decreaseBalance(int amount, String currency). To get the balance use CurrencyManager.getBalance(String currency). **Note that as of 1.18 the single currency methods for increaseBalance(int amount), decreaseBalance(int amount), and getBalance() have been deprecated.**
+
+    mCurrencyManger.getBalance(CURRENCY_TYPE);
+    mCurrencyManger.increaseBalance(5, CURRENCY_TYPE);
+    mCurrencyManger.decreaseBalance(10, CURRENCY_TYPE);
 
 Both methods return the account balance as a result of the requested transaction. These methods are designed to work offline. If you never call these two methods, then CurrencyManager will always simply provide the total amount of currency awarded through Burstly Rewards. Note that decreaseBalance will allow the account balance to drop below 0. You must use your own logic to prevent users from buying items they can’t afford.
 
