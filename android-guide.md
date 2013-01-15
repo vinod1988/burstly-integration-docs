@@ -296,6 +296,7 @@ This method will check for an updated balance asynchronously and you will receiv
     public void didFailToUpdateBalance(final Map<String, BalanceUpdateInfo> balanceUpdateMap) {
         setBalance(balanceUpdateMap.get(CURRENCY_TYPE).getOldTotal());
     }
+
 	private void setBalance(final int currentBalance) { 
 	    runOnUiThread(new Runnable() {
 	        public void run() {
