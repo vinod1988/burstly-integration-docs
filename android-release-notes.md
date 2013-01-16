@@ -14,21 +14,21 @@ Current SDK Version:  1.18.0.32451
 None.
 
 ###Public API Changes
-Added support for multiple currencies on SDK level. These changes affect ICurrencyListener callabacks.
+Added support for multiple currencies on SDK level. These changes affect ICurrencyListener callabacks and the currency manager increaseBalance, decreaseBalance, and getBalance methods. See (Android Rewards Currency Management)[http://cldocs.burstly.com:8080/android-guide#Rewards-Currency-Management] for more info.
 
 ###Updated Ad Networks
 InMobi 3.5.3 -> 3.6.0
 
 ###Additional Notable Changes
-- [ASDK-813] - There are no callbacks 'PresentFullScreen and DismissFullScreen' after clicked House/Direct text with destination type 'video' and 'website'
-- [ASDK-834] - There are no callbacks 'adNetworkPresentFullScreen/adNetworkDismissFullScreen' for Ormma ad
-- [ASDK-840] - There is no callback 'adNetworkDismissFullScreen' for Inmobi Interstitial
-- [ASDK-869] - There is no onHide() callback in Show Precached flow for ORMMA and MRAID
-- [ASDK-881] - There are no Present and Dismiss callbacks for Millennial and InMobi
-- [ASDK-890] - Ormma interstitial incorrectly displayed after rotation
-- [ASDK-764] - Implement MRAID 2.0
-- [ASDK-678] - Don't show visit site button if no click link is provided
-- [ASDK-786] - InMobi Android Jelly Bean SDK Update
+- There are no callbacks 'PresentFullScreen and DismissFullScreen' after clicked House/Direct text with destination type 'video' and 'website'
+- There are no callbacks 'adNetworkPresentFullScreen/adNetworkDismissFullScreen' for Ormma ad
+- There is no callback 'adNetworkDismissFullScreen' for Inmobi Interstitial
+- There is no onHide() callback in Show Precached flow for ORMMA and MRAID
+- There are no Present and Dismiss callbacks for Millennial and InMobi
+- Ormma interstitial incorrectly displayed after rotation
+- Implement MRAID 2.0
+- Don't show visit site button if no click link is provided
+- InMobi Android Jelly Bean SDK Update
 
 ##1.17
 ###Manifest Changes
