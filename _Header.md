@@ -1,0 +1,1 @@
+**Important:** There have been API changes to the Currency Manager for [Android](http://cldocs.burstly.com/android-guide#Rewards-Currency-Management) and [iOS](http://cldocs.burstly.com/ios-guide#Reward-Currency-Management) 
