@@ -1,5 +1,7 @@
 #Downloads
 
+**Important:** There have been API changes to the Currency Manager for [Android](http://cldocs.burstly.com/android-guide#Rewards-Currency-Management) and [iOS](http://cldocs.burstly.com/ios-guide#Reward-Currency-Management) 
+
 ##Burstly iOS SDK
 * [[Download v. 1.36.0.32293|http://sdk.burstly.com/builds/ios/convenience_layer/burstly_only/BurstlySDK_iOS_CL_BurstlyOnly.zip]]
 * Mediated Networks: Burstly, [Server-Side Partners](https://www.burstly.com/home/networksupport)

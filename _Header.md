@@ -1,1 +1,1 @@
-**Important:** There have been API changes to the Currency Manager for [Android](http://cldocs.burstly.com/android-guide#Rewards-Currency-Management) and [iOS](http://cldocs.burstly.com/ios-guide#Reward-Currency-Management) 
+This documentation is for the new API. For documentation on the legacy API go here: [iOS](http://support.burstly.com/customer/portal/topics/401519-all-ios-articles/articles), [Android](http://support.burstly.com/customer/portal/topics/401520-all-android-articles/articles)
