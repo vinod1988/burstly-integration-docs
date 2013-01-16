@@ -14,7 +14,7 @@ Current SDK Version:  1.18.0.32451
 None.
 
 ###Public API Changes
-Added support for multiple currencies on SDK level. These changes affect ICurrencyListener callabacks and the currency manager increaseBalance, decreaseBalance, and getBalance methods. See (Android Rewards Currency Management)[http://cldocs.burstly.com:8080/android-guide#Rewards-Currency-Management] for more info.
+Added support for multiple currencies on SDK level. These changes affect ICurrencyListener callabacks and the currency manager increaseBalance, decreaseBalance, and getBalance methods. See [Android Rewards Currency Management|http://cldocs.burstly.com:8080/android-guide#Rewards-Currency-Management] for more info.
 
 ###Updated Ad Networks
 InMobi 3.5.3 -> 3.6.0
