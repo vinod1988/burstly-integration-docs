@@ -14,7 +14,7 @@
 * [Click here](https://docs.google.com/a/burstly.com/spreadsheet/viewform?formkey=dDRTZXAxSDJ4YW9PV1RNcTc5VDRPWnc6MQ) to request an enterprise build.
 
 ##Burstly Android SDK
-- [[Download v.1.18.0.32453|https://s3.amazonaws.com/sdk.burstly.com/builds/android/convenience_layer/generic/BurstlySDK_Android_CL.zip]]
+- [[Download v.1.18.0.32453|https://s3.amazonaws.com/sdk.burstly.com/builds/android/convenience_layer/burstly_only/BurstlySDK_Android_CL_BurstlyOnly.zip]]
 * Mediated Networks: Burstly, [Server-Side Partners](https://www.burstly.com/home/networksupport)
 
 ##Burstly Android SDK (with 3rd party ad networks)
