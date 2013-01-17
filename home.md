@@ -14,7 +14,7 @@ Burstly offers a suite of tools to help mobile developers better monetize their 
 2) Download the SDK
  - Navigate to the [Downloads](http://cldocs.burstly.com/downloads)  section to get the latest SDK depending on your app's platform.
 
-3) Review the  to identify and understand the basics of ad serving through Burstly.
+3) Review the [glossary](http://cldocs.burstly.com:8080/home#Glossary)  to identify and understand the basics of ad serving through Burstly.
 
 4) Navigate to the guide of your choice (IOS/Android) to begin integrating the SDK. 
 
