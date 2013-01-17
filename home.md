@@ -18,4 +18,4 @@ Burstly offers a suite of tools to help mobile developers better monetize their 
 
 4) Navigate to the guide of your choice (IOS/Android) to begin integrating the SDK. 
 
-5) Familiarize yourself with configuring custom ads in your zones by visiting this [section.](http://cldocs.burstly.com/configuring-and-managing)
+5) Familiarize yourself with configuring custom ads in your zones by visiting this [section.](http://cldocs.burstly.com/configuring-and-managing#Creating-an-Ad)
