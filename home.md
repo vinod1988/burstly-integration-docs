@@ -19,3 +19,7 @@ Burstly offers a suite of tools to help mobile developers better monetize their 
 4) Navigate to the guide of your choice (IOS/Android) to begin integrating the SDK. 
 
 5) Familiarize yourself with configuring custom ads in your zones by visiting this [section.](http://cldocs.burstly.com/configuring-and-managing#Creating-an-Ad)
+
+##Glossary
+ - AppId - An AppID uniquely identifies your application and is one of the two mandatory fields when requesting ads via the Burstly API. You should create a new AppId for every new application in your organization. You should not re-use the same id across multiple SKUs.
+ - ZoneId - A zone refers to a unique placement within the application. Each app can have multiple zoneIds and each zone can request a different set of ads. A zone has a dedicated size associated to itself. You get to choose the size of this placement. An exception is an interstitial zone where the size covers the entire screen of the device. Examples of zone placements include the main menu, end of level or splash screens.
