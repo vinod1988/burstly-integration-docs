@@ -12,4 +12,10 @@ Burstly offers a suite of tools to help mobile developers better monetize their 
  - You need to pass the appId when integrating your app, so keep it handy.
 
 2) Download the SDK
- - Navigate to the [Downloads](http://cldocs.burstly.com/downloads)  
+ - Navigate to the [Downloads](http://cldocs.burstly.com/downloads)  section to get the latest SDK depending on your app's platform.
+
+3) Review the glossary to identify and understand the basics of ad serving through Burstly.
+
+4) Navigate to the guide of your choice (IOS/Android) to begin integrating the SDK. 
+
+5) Familiarize yourself with configuring custom ads in your zones by visiting this [page](http://cldocs.burstly.com/configuring-and-managing) 
