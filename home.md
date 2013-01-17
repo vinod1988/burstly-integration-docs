@@ -7,7 +7,7 @@ Burstly offers a suite of tools to help mobile developers better monetize their 
 ##How do I start?
 
 1) Set up your appId
- - Navigate to the apps [page](https://www.burstly.com/Apps/Create), login and complete the steps detailed [here to set up your app](http://cldocs.burstly.com/configuring-and-managing#Creating-an-App)
+ - Navigate to the [apps](https://www.burstly.com/Apps/Create) page, login and complete the steps detailed here to [set up your app](http://cldocs.burstly.com/configuring-and-managing#Creating-an-App)
  - Once the app is setup, retrieve the App Id by selecting the App Information tab on the navigation pane. 
  - You need to pass the appId using the API when requesting ads, so keep it handy.
 
