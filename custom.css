@@ -86,7 +86,7 @@ ol ol li {
     float: left !important;
     padding: 7px 0 7px 20px !important;
     margin-bottom: 10px;
-    overflow: hidden;
+    overflow: auto;
     background: none;
     border: none;
     height: 100%;
