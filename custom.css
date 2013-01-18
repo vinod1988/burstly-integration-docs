@@ -90,13 +90,12 @@ ol ol li {
     background: none;
     border: none;
     height: 95%;
-    background: #ff0000;
 }
 
 #wiki-rightbar.fixed
 {
     position: fixed !important;
-    top: 10px !important;
+    top: 0px !important;
 }
 
 #wiki-rightbar a.scrolltop {
