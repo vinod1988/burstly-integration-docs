@@ -89,6 +89,8 @@ ol ol li {
     overflow: hidden;
     background: none;
     border: none;
+    height: 100%;
+    background: #ff0000;
 }
 
 #wiki-rightbar.fixed
