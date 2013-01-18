@@ -91,6 +91,7 @@ ol ol li {
     border: none;
     height: 100%;
     background: #ff0000;
+    padding-bottom: -40px !important;
 }
 
 #wiki-rightbar.fixed
