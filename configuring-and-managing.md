@@ -191,7 +191,7 @@ The string passed from the client is parsed and tested against the decision rule
 
 The Burstly Rewards platform provides the functionality for your apps to display incentivised advertising which reward virtual currency for completing an action. Burstly Rewards allows you to mediate between your own House, Directly sold offers and Third Party networks in order to maximize revenue opportunities.
 
-###Placements
+###Placement Types
 
 Burstly Rewards placements are generally divided into three categories:  
 
@@ -210,7 +210,7 @@ Burstly Rewards placements are generally divided into three categories:
 
     [[res/img/offerwall_normal.jpg]]
 
-###Customization
+###Style Customization
 
 The Burstly Rewards offering supports several customization options to allow you to make your rewards match the look and feel of your game in order to provide a better experience to your users which feels more tightly integrated with your title. [[View the full customization options documentation here|http://support.burstly.com/customer/portal/articles/888713]].
 
