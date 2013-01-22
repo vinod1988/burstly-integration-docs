@@ -95,21 +95,21 @@ Example of manually passing Activity events from Activity methods:
 
 	@Override
 	public void onResume() {
-	    Burstly.get().onResumeActivity(this);
+	    Burstly.onResumeActivity(this);
 	    super.onResume();
 	    ...
 	}
 
 	@Override
 	public void onPause() {
-	    Burstly.get().onPauseActivity(this);
+	    Burstly.onPauseActivity(this);
 	    super.onPause();
 	    ...
 	}
 
 	@Override
 	public void onDestroy() {
-	    Burstly.get().onDestroyActivity(this);
+	    Burstly.onDestroyActivity(this);
 	    super.onDestroy();
 	    ...
 	}

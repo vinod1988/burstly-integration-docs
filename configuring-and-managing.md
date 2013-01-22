@@ -129,11 +129,7 @@ Next click on the Zone Assignments tab where you can view all the zones this ad 
 The opposite scenario for assigning ads would be if you wanted to assign multiple ads to one zone. For example if you wanted to A/B test creatives for some cross promotion in a Pause Menu banner zone, you would want to assign multiple versions of the ad to this one zone. To begin navigate into an app, then into the desired zone where you want to traffic the ads. Once on the Manage Tiers page click the +Assign More Ads button to view the ads you have created. While this page is very similar to the Assign to zones page, it's important to note that now you are choosing multiple ads to assign to one zone. For each creative you want to assign you can also choose it's tier and weight, affecting how often it will be requested relative to other ads in that tier. Again once you are satisfied with you choices you can navigate to any other location in the UI as selecting a tier in the zone automatically adds it and no extra step to save is required!
 
 
-##Targeting
-
-The Burstly platform offer a variety of targeting capabilities including geo targeting, device targeting, and a host of other custom targeting solutions. Here we will give a brief overview for each one with links to articles giving further in depth descriptions and instructions.
-
-###Geo-Targeting
+##Geo-Targeting
 
 Inside the Burstly UI you can geo target at the both the campaign and creative level for any ad(s). This allows for maximum flexibility when trafficking complex campaigns with any number of targeting requirements while still creating an elegant solution for the setup and trafficking process.  
 
@@ -146,7 +142,7 @@ Options include Worldwide, Non U.S.A., specific country, and U.S. Cities targeti
 [[res/img/geotarget_cities.png]]
 
 
-###Device Targeting
+##Device Targeting
 
 The Burstly platform offers users the ability to target campaigns/creatives to specific platforms and devices. Any targeting combination of specific devices, models, and operating systems can be achieved with a few clicks. For example a publisher can target ads to users who are only on the iPhone 4s running 5.1.1 and above or target only those users on iPod touches regardless of operating system. Burstly continuously updates this list as new devices/operating systems come on the market.  
 
@@ -157,7 +153,7 @@ On Android, publishers also have the choice of targeting based on screen density
 [[res/img/device_targeting_android.png]]
 
 
-###Custom Targeting
+##Custom Targeting
 
 Custom targeting allows publishers to pass back strings comprised of key-value pairs to the Burstly ad server to enhance ad serving capabilities. For example, ads can be targeted to a specific app version, user language, or gender.
 
@@ -195,7 +191,7 @@ The string passed from the client is parsed and tested against the decision rule
 
 The Burstly Rewards platform provides the functionality for your apps to display incentivised advertising which reward virtual currency for completing an action. Burstly Rewards allows you to mediate between your own House, Directly sold offers and Third Party networks in order to maximize revenue opportunities.
 
-###Placements
+###Placement Types
 
 Burstly Rewards placements are generally divided into three categories:  
 
@@ -214,7 +210,7 @@ Burstly Rewards placements are generally divided into three categories:
 
     [[res/img/offerwall_normal.jpg]]
 
-###Customization
+###Style Customization
 
 The Burstly Rewards offering supports several customization options to allow you to make your rewards match the look and feel of your game in order to provide a better experience to your users which feels more tightly integrated with your title. [[View the full customization options documentation here|http://support.burstly.com/customer/portal/articles/888713]].
 

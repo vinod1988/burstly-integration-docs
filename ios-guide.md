@@ -301,6 +301,23 @@ You can swap "kBurstlyTestAdmob" with one of the following enum values to test d
 We recommend passing in an array of device MAC addresses (NSString) to the "setIntegrationModeWithTestNetwork:filterDeviceMacAddresses:" method. This will ensure that when deployed to a device, integration mode will only be enabled if the device MAC address is among those specified in the array. This should prevent anyone from accidentally deploying an app to the public that only serves test ads.  
 
 
+##Custom Targeting
+
+Burstly supports custom targeting. This allows you to pass a comma-separated string of parameters with each ad request. These custom parameters can be used to target specific ads into your app. Below is an example of passing age and gender information about your users:
+
+    // You must set custom targeting before calling showAd or cacheAd.
+    [self.banner.adRequest setTargettingParameters:@"gender='m',age=18"];
+    // The same can be done for interstitials.
+    [self.interstitial.adRequest setTargettingParameters:@"gender='m',age=18"];
+
+Notice that string values should be enclosed in quotes and numerical values should not. Keep in mind that these parameters are arbitrary and you can pass anything you want:
+
+    // You must set custom targeting before calling showAd or cacheAd.
+    [self.banner.adRequest setTargettingParameters:@"myParam='value',otherParam='value',numericalParam=2345"];
+
+For these targeting parameters to have any bearing on your ads you'll need to also configure specific creatives in the Burstly Dashboard. You can learn how to do this [here](http://cldocs.burstly.com/configuring-and-managing#Custom-Targeting).
+
+
 ##Reward Currency Management  
 
 Burstly supports methods for managing currency earned through specialized ads called rewards. You can read about Burstly Rewards [here](http://cldocs.burstly.com/configuring-and-managing).  

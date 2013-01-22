@@ -84,17 +84,19 @@ ol ol li {
 #wiki-rightbar
 {
     float: left !important;
-    padding: 7px 0 7px 20px !important;
+    padding: 0 0 0 20px !important;
     margin-bottom: 10px;
-    overflow: hidden;
+    overflow: auto;
     background: none;
     border: none;
+    height: 100%;
+    background: #ffffff;
 }
 
 #wiki-rightbar.fixed
 {
     position: fixed !important;
-    top: 10px !important;
+    top: 0px !important;
 }
 
 #wiki-rightbar a.scrolltop {
